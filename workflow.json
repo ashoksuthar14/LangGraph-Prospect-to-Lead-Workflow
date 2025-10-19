@@ -1,0 +1,286 @@
+{
+  "workflow_name": "ProspectToLeadWorkflow",
+  "description": "End-to-end AI agent workflow to find, enrich, score, and outreach to B2B prospects",
+  "version": "1.0.0",
+  "config": {
+    "scoring": {
+      "weights": {
+        "company_size": 0.3,
+        "industry_match": 0.25,
+        "technology_stack": 0.2,
+        "recent_signals": 0.25
+      },
+      "thresholds": {
+        "min_score": 7.0,
+        "high_priority": 9.0
+      }
+    },
+    "outreach": {
+      "persona": "SDR",
+      "tone": "friendly_professional",
+      "max_length": 150,
+      "include_personalization": true
+    },
+    "icp": {
+      "industry": ["SaaS", "Technology", "Financial Services"],
+      "location": ["USA", "Canada", "UK"],
+      "employee_count": {
+        "min": 100,
+        "max": 2000
+      },
+      "revenue": {
+        "min": 10000000,
+        "max": 500000000
+      }
+    }
+  },
+  "steps": [
+    {
+      "id": "prospect_search",
+      "agent": "ProspectSearchAgent",
+      "inputs": {
+        "icp": "{{config.icp}}",
+        "signals": ["recent_funding", "hiring_for_sales", "new_leadership", "product_launch"],
+        "limit": 50
+      },
+      "instructions": "Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.",
+      "tools": [
+        {
+          "name": "ClayAPI",
+          "config": {
+            "api_key": "{{CLAY_API_KEY}}",
+            "endpoint": "https://api.clay.com/v1/search"
+          }
+        },
+        {
+          "name": "ApolloAPI", 
+          "config": {
+            "api_key": "{{APOLLO_API_KEY}}",
+            "endpoint": "https://api.apollo.io/v1/mixed_search"
+          }
+        }
+      ],
+      "output_schema": {
+        "leads": [
+          {
+            "company": "string",
+            "contact_name": "string", 
+            "email": "string",
+            "title": "string",
+            "linkedin": "string",
+            "company_size": "integer",
+            "industry": "string",
+            "signals": ["string"]
+          }
+        ]
+      },
+      "reasoning_prompt": "I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent."
+    },
+    {
+      "id": "enrichment",
+      "agent": "DataEnrichmentAgent", 
+      "inputs": {
+        "leads": "{{prospect_search.output.leads}}"
+      },
+      "instructions": "Enrich lead data with additional company information, technology stack, and contact details using Explorium API.",
+      "tools": [
+        {
+          "name": "ExploriumAPI",
+          "config": {
+            "api_key": "{{EXPLORIUM_API_KEY}}",
+            "endpoint": "https://api.explorium.ai/v1"
+          }
+        }
+      ],
+      "output_schema": {
+        "enriched_leads": [
+          {
+            "company": "string",
+            "contact": {
+              "name": "string",
+              "email": "string", 
+              "title": "string",
+              "linkedin": "string",
+              "seniority": "string"
+            },
+            "company_data": {
+              "description": "string",
+              "technologies": ["string"],
+              "funding": "string",
+              "employee_count": "integer",
+              "annual_revenue": "integer"
+            }
+          }
+        ]
+      },
+      "reasoning_prompt": "I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization."
+    },
+    {
+      "id": "scoring",
+      "agent": "ScoringAgent",
+      "inputs": {
+        "enriched_leads": "{{enrichment.output.enriched_leads}}",
+        "scoring_criteria": "{{config.scoring}}"
+      },
+      "instructions": "Score leads based on ICP fit, buying signals, and company data. Rank prospects by likelihood to convert.",
+      "tools": [],
+      "output_schema": {
+        "ranked_leads": [
+          {
+            "lead": "object",
+            "score": "float",
+            "reasoning": "string",
+            "priority": "string"
+          }
+        ]
+      },
+      "reasoning_prompt": "I need to evaluate each lead against our ICP criteria and buying signals to prioritize outreach efforts on the most promising prospects."
+    },
+    {
+      "id": "outreach_content",
+      "agent": "OutreachContentAgent",
+      "inputs": {
+        "ranked_leads": "{{scoring.output.ranked_leads}}",
+        "persona": "{{config.outreach.persona}}",
+        "tone": "{{config.outreach.tone}}",
+        "max_length": "{{config.outreach.max_length}}"
+      },
+      "instructions": "Generate personalized outreach messages using Gemini API based on prospect data and company information.",
+      "tools": [
+        {
+          "name": "GeminiAPI",
+          "config": {
+            "api_key": "{{GEMINI_API_KEY}}",
+            "model": "gemini-1.5-flash"
+          }
+        }
+      ],
+      "output_schema": {
+        "messages": [
+          {
+            "lead_id": "string",
+            "subject_line": "string", 
+            "email_body": "string",
+            "personalization_factors": ["string"]
+          }
+        ]
+      },
+      "reasoning_prompt": "I need to create compelling, personalized outreach messages that resonate with each prospect's specific situation and pain points."
+    },
+    {
+      "id": "send",
+      "agent": "OutreachExecutorAgent",
+      "inputs": {
+        "messages": "{{outreach_content.output.messages}}",
+        "ranked_leads": "{{scoring.output.ranked_leads}}"
+      },
+      "instructions": "Send personalized emails using SendGrid API and log delivery status for tracking.",
+      "tools": [
+        {
+          "name": "SendGridAPI",
+          "config": {
+            "api_key": "{{SENDGRID_API_KEY}}",
+            "from_email": "{{SENDER_EMAIL}}"
+          }
+        }
+      ],
+      "output_schema": {
+        "sent_status": [
+          {
+            "lead_id": "string",
+            "email": "string",
+            "status": "string",
+            "sent_at": "string",
+            "message_id": "string"
+          }
+        ],
+        "campaign_id": "string"
+      },
+      "reasoning_prompt": "I need to execute the outreach campaign by sending personalized emails while tracking delivery status for follow-up analysis."
+    },
+    {
+      "id": "response_tracking",
+      "agent": "ResponseTrackerAgent", 
+      "inputs": {
+        "campaign_id": "{{send.output.campaign_id}}",
+        "sent_status": "{{send.output.sent_status}}"
+      },
+      "instructions": "Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.",
+      "tools": [
+        {
+          "name": "SendGridAPI",
+          "config": {
+            "api_key": "{{SENDGRID_API_KEY}}"
+          }
+        }
+      ],
+      "output_schema": {
+        "responses": [
+          {
+            "lead_id": "string",
+            "opened": "boolean",
+            "clicked": "boolean", 
+            "replied": "boolean",
+            "meeting_booked": "boolean",
+            "response_sentiment": "string"
+          }
+        ],
+        "metrics": {
+          "total_sent": "integer",
+          "open_rate": "float",
+          "click_rate": "float", 
+          "reply_rate": "float",
+          "meeting_rate": "float"
+        }
+      },
+      "reasoning_prompt": "I need to track engagement metrics to understand campaign performance and identify opportunities for optimization."
+    },
+    {
+      "id": "feedback_trainer",
+      "agent": "FeedbackTrainerAgent",
+      "inputs": {
+        "responses": "{{response_tracking.output.responses}}",
+        "metrics": "{{response_tracking.output.metrics}}"
+      },
+      "instructions": "Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.",
+      "tools": [
+        {
+          "name": "GoogleSheetsAPI",
+          "config": {
+            "sheet_id": "{{GOOGLE_SHEET_ID}}",
+            "credentials_file": "{{GOOGLE_CREDENTIALS_PATH}}"
+          }
+        }
+      ],
+      "output_schema": {
+        "recommendations": [
+          {
+            "type": "string",
+            "current_value": "string",
+            "suggested_value": "string", 
+            "reasoning": "string",
+            "confidence": "float"
+          }
+        ],
+        "performance_summary": {
+          "overall_score": "float",
+          "key_insights": ["string"],
+          "action_items": ["string"]
+        }
+      },
+      "reasoning_prompt": "I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts."
+    }
+  ],
+  "flow": {
+    "start": "prospect_search",
+    "edges": [
+      {"from": "prospect_search", "to": "enrichment"},
+      {"from": "enrichment", "to": "scoring"}, 
+      {"from": "scoring", "to": "outreach_content"},
+      {"from": "outreach_content", "to": "send"},
+      {"from": "send", "to": "response_tracking"},
+      {"from": "response_tracking", "to": "feedback_trainer"}
+    ],
+    "end": "feedback_trainer"
+  }
+}
