@@ -8,7 +8,7 @@ An **autonomous multi-agent B2B prospecting and outreach system** built with Lan
 
 ## 📹 Demo Video
 
-🎥 **[Watch the Complete System Demo](https://www.youtube.com/watch?v=your-video-link)**
+🎥 **[Watch the Complete System Demo](https://www.youtube.com/watch?v=ytsB0F4D18w)**
 
 See the entire workflow in action - from lead discovery to email sending and analytics dashboard!
 
@@ -588,7 +588,8 @@ After execution, you should see:
 
 ## 📝 Additional Resources
 
-- 🎥 **[Complete Video Tutorial](https://www.youtube.com/watch?v=your-video-link)** - Step-by-step setup guide
+- 🎥 **[Complete Video Tutorial](https://www.youtube.com/watch?v=ytsB0F4D18w)** - Step-by-step setup guide
 - 📚 **API Documentation** - Check individual agent files for detailed API docs
 - 🐞 **Issues & Support** - Report bugs or request features on GitHub
 - 📈 **Advanced Configuration** - See `workflow.json` for customization options
+
