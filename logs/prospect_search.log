@@ -1,0 +1,3228 @@
+2025-10-20 01:55:11,790 - agent.prospect_search - INFO - Starting execution prospect_search_0eec92f1
+2025-10-20 01:55:11,791 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 01:55:11,793 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 01:55:11,794 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T01:55:11.794382] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:55:11,795 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T01:55:11.794382] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:55:11,795 - agent.prospect_search - WARNING - Clay API not configured, skipping Clay search
+2025-10-20 01:55:11,796 - agent.prospect_search - WARNING - Apollo API not configured, skipping Apollo search
+2025-10-20 01:55:11,796 - agent.prospect_search - INFO - Combined results: 0 total leads
+2025-10-20 01:55:11,797 - agent.prospect_search - INFO - Deduplicated 0 leads to 0 unique leads
+2025-10-20 01:55:11,798 - agent.prospect_search - INFO - Filtered 0 leads to 0 ICP-matching leads
+2025-10-20 01:55:11,798 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T01:55:11.798386] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 0
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:55:11,799 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 01:55:11,799 - agent.prospect_search - INFO - Execution prospect_search_0eec92f1 completed with status: SUCCESS
+2025-10-20 01:55:11,800 - agent.prospect_search - INFO - Outputs: {
+  "leads": [],
+  "total_found": 0,
+  "sources": {
+    "clay": 0,
+    "apollo": 0
+  }
+}
+2025-10-20 01:56:37,453 - agent.prospect_search - INFO - Starting execution prospect_search_f273cce3
+2025-10-20 01:56:37,453 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 01:56:37,454 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 01:56:37,454 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T01:56:37.454672] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:56:37,454 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T01:56:37.454672] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:56:37,454 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 01:56:37,455 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 01:56:37,455 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 01:56:37,455 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 01:56:37,455 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 01:56:37,455 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 01:56:37,457 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 01:56:37,457 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T01:56:37.457455] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 01:56:37,458 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 01:56:37,458 - agent.prospect_search - INFO - Execution prospect_search_f273cce3 completed with status: SUCCESS
+2025-10-20 01:56:37,459 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:00:37,044 - agent.prospect_search - INFO - Starting execution prospect_search_7e3c8520
+2025-10-20 02:00:37,045 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:00:37,045 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:00:37,045 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:00:37.045915] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:00:37,046 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:00:37.046918] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:00:37,046 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:00:37,047 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:00:37,047 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:00:37,047 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:00:37,047 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:00:37,047 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:00:37,049 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:00:37,049 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:00:37.049425] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:00:37,049 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:00:37,049 - agent.prospect_search - INFO - Execution prospect_search_7e3c8520 completed with status: SUCCESS
+2025-10-20 02:00:37,050 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:25:17,414 - agent.prospect_search - INFO - Starting execution prospect_search_c61908d2
+2025-10-20 02:25:17,416 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:25:17,416 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:25:17,416 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:25:17.416416] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:25:17,417 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:25:17.417930] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:25:17,417 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:25:17,418 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:25:17,419 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:25:17,419 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:25:17,419 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:25:17,419 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:25:17,420 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:25:17,420 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:25:17.420469] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:25:17,422 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:25:17,424 - agent.prospect_search - INFO - Execution prospect_search_c61908d2 completed with status: SUCCESS
+2025-10-20 02:25:17,424 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:35:42,160 - agent.prospect_search - INFO - Starting execution prospect_search_988ca6a5
+2025-10-20 02:35:42,161 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:35:42,162 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:35:42,162 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:35:42.162988] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:35:42,164 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:35:42.164001] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:35:42,165 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:35:42,165 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:35:42,165 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:35:42,166 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:35:42,166 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:35:42,166 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:35:42,166 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:35:42,167 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:35:42.167002] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:35:42,171 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:35:42,172 - agent.prospect_search - INFO - Execution prospect_search_988ca6a5 completed with status: SUCCESS
+2025-10-20 02:35:42,172 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:36:26,196 - agent.prospect_search - INFO - Starting execution prospect_search_70a7792e
+2025-10-20 02:36:26,196 - agent.prospect_search - INFO - Starting execution prospect_search_70a7792e
+2025-10-20 02:36:26,198 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:36:26,198 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:36:26,200 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:36:26,200 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:36:26,204 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:26.203261] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,204 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:26.203261] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,206 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:36:26.205261] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,206 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:36:26.205261] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,207 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:36:26,207 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:36:26,209 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:36:26,209 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:36:26,210 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:36:26,210 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:36:26,211 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:36:26,211 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:36:26,213 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:36:26,213 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:36:26,216 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:36:26,216 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:36:26,218 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:36:26,218 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:36:26,219 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:36:26.219327] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,219 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:36:26.219327] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:36:26,221 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:36:26,221 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:36:26,222 - agent.prospect_search - INFO - Execution prospect_search_70a7792e completed with status: SUCCESS
+2025-10-20 02:36:26,222 - agent.prospect_search - INFO - Execution prospect_search_70a7792e completed with status: SUCCESS
+2025-10-20 02:36:26,223 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:36:26,223 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:42:32,876 - agent.prospect_search - INFO - Starting execution prospect_search_dd7a49fa
+2025-10-20 02:42:32,877 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:42:32,878 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:42:32,879 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:42:32.879166] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:42:32,880 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:42:32.879166] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:42:32,880 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:42:32,880 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:42:32,881 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:42:32,881 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:42:32,881 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:42:32,881 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:42:32,882 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:42:32,882 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:42:32.882167] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:42:32,883 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:42:32,883 - agent.prospect_search - INFO - Execution prospect_search_dd7a49fa completed with status: SUCCESS
+2025-10-20 02:42:32,883 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:47:32,159 - agent.prospect_search - INFO - Starting execution prospect_search_9f367df3
+2025-10-20 02:47:32,166 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:47:32,168 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:47:32,169 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:47:32.168984] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:47:32,180 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:47:32.177277] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:47:32,185 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:47:32,209 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:47:32,240 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:47:32,249 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:47:32,261 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:47:32,272 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:47:32,288 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:47:32,303 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:47:32.303224] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:47:32,316 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:47:32,321 - agent.prospect_search - INFO - Execution prospect_search_9f367df3 completed with status: SUCCESS
+2025-10-20 02:47:32,336 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:48:57,935 - agent.prospect_search - INFO - Starting execution prospect_search_cfa0559a
+2025-10-20 02:48:57,935 - agent.prospect_search - INFO - Starting execution prospect_search_cfa0559a
+2025-10-20 02:48:57,936 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:48:57,936 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:48:57,938 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:48:57,938 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:48:57,939 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:57.938858] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,939 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:57.938858] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,940 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:48:57.940872] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,940 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:48:57.940872] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,941 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:48:57,941 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:48:57,946 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:48:57,946 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:48:57,950 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:48:57,950 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:48:57,952 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:48:57,952 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:48:57,954 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:48:57,954 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:48:57,954 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:48:57,954 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:48:57,955 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:48:57,955 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:48:57,956 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:48:57.955402] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,956 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:48:57.955402] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:48:57,959 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:48:57,959 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:48:57,960 - agent.prospect_search - INFO - Execution prospect_search_cfa0559a completed with status: SUCCESS
+2025-10-20 02:48:57,960 - agent.prospect_search - INFO - Execution prospect_search_cfa0559a completed with status: SUCCESS
+2025-10-20 02:48:57,961 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:48:57,961 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 02:56:28,614 - agent.prospect_search - INFO - Starting execution prospect_search_fbc137bd
+2025-10-20 02:56:28,616 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 02:56:28,616 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 02:56:28,618 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:56:28.618590] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:56:28,619 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T02:56:28.619589] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:56:28,620 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 02:56:28,621 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 02:56:28,621 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 02:56:28,622 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 02:56:28,623 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 02:56:28,624 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 02:56:28,625 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 02:56:28,626 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T02:56:28.626603] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 02:56:28,627 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 02:56:28,627 - agent.prospect_search - INFO - Execution prospect_search_fbc137bd completed with status: SUCCESS
+2025-10-20 02:56:28,628 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 03:03:00,841 - agent.prospect_search - INFO - Starting execution prospect_search_631f5162
+2025-10-20 03:03:00,843 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 03:03:00,844 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 03:03:00,846 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:03:00.846007] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:03:00,848 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T03:03:00.847237] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:03:00,848 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 03:03:00,849 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 03:03:00,849 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 03:03:00,850 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 03:03:00,850 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 03:03:00,850 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 03:03:00,850 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 03:03:00,851 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T03:03:00.851240] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:03:00,851 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 03:03:00,852 - agent.prospect_search - INFO - Execution prospect_search_631f5162 completed with status: SUCCESS
+2025-10-20 03:03:00,852 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 03:05:37,004 - agent.prospect_search - INFO - Starting execution prospect_search_95350ca9
+2025-10-20 03:05:37,005 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 03:05:37,006 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 03:05:37,006 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:05:37.006613] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:05:37,007 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T03:05:37.006613] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:05:37,007 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 03:05:37,007 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 03:05:37,008 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 03:05:37,008 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 03:05:37,008 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 03:05:37,009 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 03:05:37,010 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 03:05:37,011 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T03:05:37.010913] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:05:37,011 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 03:05:37,011 - agent.prospect_search - INFO - Execution prospect_search_95350ca9 completed with status: SUCCESS
+2025-10-20 03:05:37,012 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 03:11:45,308 - agent.prospect_search - INFO - Starting execution prospect_search_ff9520da
+2025-10-20 03:11:45,309 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 03:11:45,309 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 03:11:45,310 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:11:45.310629] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:11:45,311 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T03:11:45.311621] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:11:45,318 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 03:11:45,320 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 03:11:45,321 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 03:11:45,321 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 03:11:45,322 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 03:11:45,323 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 03:11:45,323 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 03:11:45,325 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T03:11:45.325442] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:11:45,329 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 03:11:45,331 - agent.prospect_search - INFO - Execution prospect_search_ff9520da completed with status: SUCCESS
+2025-10-20 03:11:45,332 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 03:28:46,453 - agent.prospect_search - INFO - Starting execution prospect_search_36403195
+2025-10-20 03:28:46,458 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 03:28:46,462 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 03:28:46,464 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:28:46.464781] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:28:46,466 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T03:28:46.466780] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:28:46,467 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 03:28:46,467 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 03:28:46,467 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 03:28:46,469 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 03:28:46,469 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 03:28:46,469 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 03:28:46,470 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 03:28:46,470 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T03:28:46.470050] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:28:46,470 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 03:28:46,471 - agent.prospect_search - INFO - Execution prospect_search_36403195 completed with status: SUCCESS
+2025-10-20 03:28:46,471 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}
+2025-10-20 03:41:08,838 - agent.prospect_search - INFO - Starting execution prospect_search_c7dee4db
+2025-10-20 03:41:08,865 - agent.prospect_search - INFO - Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+2025-10-20 03:41:08,872 - agent.prospect_search - INFO - Input validation passed for prospect_search
+2025-10-20 03:41:08,873 - agent.prospect_search - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:41:08.873665] Agent: prospect_search
+Step: initial_analysis
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:41:08,877 - agent.prospect_search - INFO - Reasoning - planning_search: 
+[2025-10-20T03:41:08.877224] Agent: prospect_search
+Step: planning_search
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "icp": {
+    "industry": [
+      "SaaS",
+      "Technology",
+      "Financial Services"
+    ],
+    "location": [
+      "USA",
+      "Canada",
+      "UK"
+    ],
+    "employee_count": {
+      "min": 100,
+      "max": 2000
+    },
+    "revenue": {
+      "min": 10000000,
+      "max": 500000000
+    }
+  },
+  "signals": [
+    "recent_funding",
+    "hiring_for_sales",
+    "new_leadership",
+    "product_launch"
+  ],
+  "limit": 50
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:41:08,880 - agent.prospect_search - INFO - Searching Clay API for prospects...
+2025-10-20 03:41:08,883 - agent.prospect_search - INFO - Clay API returned 2 results
+2025-10-20 03:41:08,885 - agent.prospect_search - INFO - Searching Apollo API for prospects...
+2025-10-20 03:41:08,885 - agent.prospect_search - INFO - Apollo API returned 2 results
+2025-10-20 03:41:08,886 - agent.prospect_search - INFO - Combined results: 4 total leads
+2025-10-20 03:41:08,886 - agent.prospect_search - INFO - Deduplicated 4 leads to 4 unique leads
+2025-10-20 03:41:08,887 - agent.prospect_search - INFO - Filtered 4 leads to 4 ICP-matching leads
+2025-10-20 03:41:08,888 - agent.prospect_search - INFO - Reasoning - search_complete: 
+[2025-10-20T03:41:08.888772] Agent: prospect_search
+Step: search_complete
+
+Base Reasoning: I need to search for high-quality B2B prospects. Let me analyze the ICP criteria and identify the best sources for finding decision-makers with buying intent.
+
+Current Inputs: {
+  "leads_found": 4
+}
+
+Instructions: Search for companies and contacts matching ICP criteria using Clay and Apollo APIs. Focus on finding decision-makers with buying signals.
+
+Available Tools: ['ClayAPI', 'ApolloAPI']
+        
+2025-10-20 03:41:08,894 - agent.prospect_search - INFO - Output validation passed for prospect_search
+2025-10-20 03:41:08,896 - agent.prospect_search - INFO - Execution prospect_search_c7dee4db completed with status: SUCCESS
+2025-10-20 03:41:08,897 - agent.prospect_search - INFO - Outputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ],
+  "total_found": 4,
+  "sources": {
+    "clay": 2,
+    "apollo": 2
+  }
+}

@@ -1,0 +1,2997 @@
+2025-10-20 01:55:11,836 - agent.feedback_trainer - WARNING - Google Sheets API not configured - using mock integration
+2025-10-20 01:55:11,836 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_9fe88d75
+2025-10-20 01:55:11,837 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": null,
+  "metrics": null
+}
+2025-10-20 01:55:11,838 - agent.feedback_trainer - ERROR - Field 'responses' must be a list
+2025-10-20 01:55:11,839 - agent.feedback_trainer - ERROR - Execution feedback_trainer_9fe88d75 failed: Input validation failed
+2025-10-20 01:55:11,839 - agent.feedback_trainer - INFO - Execution feedback_trainer_9fe88d75 completed with status: FAILED
+2025-10-20 01:56:37,478 - agent.feedback_trainer - WARNING - Google Sheets API not configured - using mock integration
+2025-10-20 01:56:37,479 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_176afcd8
+2025-10-20 01:56:37,479 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": null,
+  "metrics": null
+}
+2025-10-20 01:56:37,479 - agent.feedback_trainer - ERROR - Field 'responses' must be a list
+2025-10-20 01:56:37,479 - agent.feedback_trainer - ERROR - Execution feedback_trainer_176afcd8 failed: Input validation failed
+2025-10-20 01:56:37,480 - agent.feedback_trainer - INFO - Execution feedback_trainer_176afcd8 completed with status: FAILED
+2025-10-20 02:00:47,474 - agent.feedback_trainer - WARNING - Google Sheets API not configured - using mock integration
+2025-10-20 02:00:47,475 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_6836c089
+2025-10-20 02:00:47,476 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "mock_f98aef0d4262",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "mock_3dc2ac40fbae",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T21:42:24.293159",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Denver, CO",
+        "device_type": "desktop"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "mock_b941ea0b1917",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-20T06:54:24.461346",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Seattle, WA",
+        "device_type": "mobile"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "mock_ab2188a19ca9",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T18:26:52.567969",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "ip_location": "Denver, CO",
+        "device_type": "mobile"
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 3,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.75,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+2025-10-20 02:00:47,478 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:00:47,479 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:00:47.478614] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "mock_f98aef0d4262",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "mock_3dc2ac40fbae",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T21:42:24.293159",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Denver, CO",
+        "device_type": "desktop"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "mock_b941ea0b1917",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-20T06:54:24.461346",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Seattle, WA",
+        "device_type": "mobile"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "mock_ab2188a19ca9",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T18:26:52.567969",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "ip_location": "Denver, CO",
+        "device_type": "mobile"
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 3,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.75,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:00:47,480 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:00:47.480615] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "mock_f98aef0d4262",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "mock_3dc2ac40fbae",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T21:42:24.293159",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Denver, CO",
+        "device_type": "desktop"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "mock_b941ea0b1917",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-20T06:54:24.461346",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Seattle, WA",
+        "device_type": "mobile"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "mock_ab2188a19ca9",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T18:26:52.567969",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "ip_location": "Denver, CO",
+        "device_type": "mobile"
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 3,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.75,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:00:47,481 - agent.feedback_trainer - WARNING - Sheets not configured - logging locally
+2025-10-20 02:00:47,488 - agent.feedback_trainer - INFO - Feedback logged to local file: campaign_feedback.json
+2025-10-20 02:00:47,488 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:00:47.488024] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 2.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:00:47,489 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:00:47,489 - agent.feedback_trainer - INFO - Execution feedback_trainer_6836c089 completed with status: SUCCESS
+2025-10-20 02:00:47,490 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "company_size_targeting",
+      "current_value": "Broad size range (100-2000 employees)",
+      "suggested_value": "Focus on 200-800 employees",
+      "reasoning": "Low reply rate suggests targeting may be too broad. Mid-market companies (200-800) typically have better response rates.",
+      "confidence": 0.7
+    },
+    {
+      "type": "timing_optimization",
+      "current_value": "Standard business hours",
+      "suggested_value": "Include evening and weekend sends",
+      "reasoning": "High mobile engagement suggests prospects read emails outside traditional hours.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 2.0,
+    "key_insights": [
+      "Most engagement occurs within 24 hours of sending",
+      "High mobile engagement - ensure mobile-optimized content",
+      "Good open rates but low replies - content may not match subject line expectations"
+    ],
+    "action_items": [
+      "Implement timing_optimization: Include evening and weekend sends"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.75,
+        "benchmark": 0.25,
+        "performance_ratio": 3.0,
+        "status": "above_benchmark",
+        "recommendation": "Excellent open rate performance - 20% above industry benchmark"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:00:47.481981"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:00:47.489334"
+}
+2025-10-20 02:25:28,602 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:25:28,604 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_192ab2c3
+2025-10-20 02:25:28,605 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:25:28,606 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:25:28,609 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:25:28.608222] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:25:28,610 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:25:28.610224] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:25:28,613 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:25:28,614 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:25:28.614213] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:25:28,615 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:25:28,616 - agent.feedback_trainer - INFO - Execution feedback_trainer_192ab2c3 completed with status: SUCCESS
+2025-10-20 02:25:28,617 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:25:28.613209"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:25:28.615215"
+}
+2025-10-20 02:35:57,807 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:35:57,809 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_39106dce
+2025-10-20 02:35:57,809 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:35:57,810 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:35:57,811 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:35:57.811697] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:35:57,812 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:35:57.812702] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:35:57,813 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:35:57,813 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:35:57.813694] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:35:57,814 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:35:57,815 - agent.feedback_trainer - INFO - Execution feedback_trainer_39106dce completed with status: SUCCESS
+2025-10-20 02:35:57,820 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:35:57.813694"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:35:57.814699"
+}
+2025-10-20 02:36:37,016 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:36:37,016 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:36:37,034 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_b1f22127
+2025-10-20 02:36:37,034 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_b1f22127
+2025-10-20 02:36:37,046 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:36:37,046 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:36:37,061 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:36:37,061 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:36:37,070 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:37.070988] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,070 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:37.070988] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,078 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:36:37.078245] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,078 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:36:37.078245] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,093 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:36:37,093 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:36:37,121 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:36:37.120067] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,121 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:36:37.120067] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:36:37,138 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:36:37,138 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:36:37,139 - agent.feedback_trainer - INFO - Execution feedback_trainer_b1f22127 completed with status: SUCCESS
+2025-10-20 02:36:37,139 - agent.feedback_trainer - INFO - Execution feedback_trainer_b1f22127 completed with status: SUCCESS
+2025-10-20 02:36:37,140 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:36:37.093354"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:36:37.138761"
+}
+2025-10-20 02:36:37,140 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:36:37.093354"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:36:37.138761"
+}
+2025-10-20 02:43:31,714 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:43:31,716 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_adb7d26d
+2025-10-20 02:43:31,717 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:43:31,723 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:43:31,728 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:43:31.727282] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:43:31,732 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:43:31.728284] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:43:31,734 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:43:31,736 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:43:31.736281] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:43:31,737 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:43:31,738 - agent.feedback_trainer - INFO - Execution feedback_trainer_adb7d26d completed with status: SUCCESS
+2025-10-20 02:43:31,739 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:43:31.734287"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:43:31.737283"
+}
+2025-10-20 02:48:25,987 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:48:25,988 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_1e898c14
+2025-10-20 02:48:25,989 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:48:25,989 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:48:25,990 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:25.990428] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:48:25,991 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:48:25.990428] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:48:26,001 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:48:26,002 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:48:26.002157] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:48:26,002 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:48:26,003 - agent.feedback_trainer - INFO - Execution feedback_trainer_1e898c14 completed with status: SUCCESS
+2025-10-20 02:48:26,003 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:48:26.001161"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:48:26.002157"
+}
+2025-10-20 02:49:45,977 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:49:45,977 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:49:45,980 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_cad87aa7
+2025-10-20 02:49:45,980 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_cad87aa7
+2025-10-20 02:49:45,984 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:49:45,984 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:49:45,985 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:49:45,985 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:49:45,986 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:49:45.986859] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,986 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:49:45.986859] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,987 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:49:45.987858] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,987 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:49:45.987858] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,989 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:49:45,989 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:49:45,992 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:49:45.992384] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,992 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:49:45.992384] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:49:45,993 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:49:45,993 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:49:45,994 - agent.feedback_trainer - INFO - Execution feedback_trainer_cad87aa7 completed with status: SUCCESS
+2025-10-20 02:49:45,994 - agent.feedback_trainer - INFO - Execution feedback_trainer_cad87aa7 completed with status: SUCCESS
+2025-10-20 02:49:45,996 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:49:45.989859"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:49:45.993382"
+}
+2025-10-20 02:49:45,996 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:49:45.989859"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:49:45.993382"
+}
+2025-10-20 02:57:18,316 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 02:57:18,321 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_db1a5b90
+2025-10-20 02:57:18,325 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 02:57:18,326 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 02:57:18,327 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:57:18.327657] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:57:18,328 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T02:57:18.328656] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:57:18,328 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 02:57:18,329 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T02:57:18.329955] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 02:57:18,330 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 02:57:18,331 - agent.feedback_trainer - INFO - Execution feedback_trainer_db1a5b90 completed with status: SUCCESS
+2025-10-20 02:57:18,332 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T02:57:18.328656"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T02:57:18.330964"
+}
+2025-10-20 03:03:50,622 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 03:03:50,634 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_b6fd86d5
+2025-10-20 03:03:50,634 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 03:03:50,635 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 03:03:50,635 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:03:50.635295] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:03:50,636 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T03:03:50.636294] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:03:50,637 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 03:03:50,637 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T03:03:50.637296] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:03:50,637 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 03:03:50,638 - agent.feedback_trainer - INFO - Execution feedback_trainer_b6fd86d5 completed with status: SUCCESS
+2025-10-20 03:03:50,638 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T03:03:50.637296"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T03:03:50.637296"
+}
+2025-10-20 03:06:23,603 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 03:06:23,604 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_3c194079
+2025-10-20 03:06:23,604 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 03:06:23,604 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 03:06:23,605 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:06:23.605467] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:06:23,606 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T03:06:23.605467] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:06:23,607 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 03:06:23,607 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T03:06:23.607985] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:06:23,607 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 03:06:23,607 - agent.feedback_trainer - INFO - Execution feedback_trainer_3c194079 completed with status: SUCCESS
+2025-10-20 03:06:23,608 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T03:06:23.607467"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T03:06:23.607985"
+}
+2025-10-20 03:12:32,263 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 03:12:32,265 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_ef3beb74
+2025-10-20 03:12:32,265 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+2025-10-20 03:12:32,266 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 03:12:32,267 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:12:32.266579] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:12:32,268 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T03:12:32.267571] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:12:32,271 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 03:12:32,279 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T03:12:32.278894] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:12:32,279 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 03:12:32,280 - agent.feedback_trainer - INFO - Execution feedback_trainer_ef3beb74 completed with status: SUCCESS
+2025-10-20 03:12:32,280 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "icp_targeting",
+      "current_value": "Unknown",
+      "suggested_value": "Need more data",
+      "reasoning": "Insufficient response data for ICP analysis",
+      "confidence": 0.1
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Insufficient data for meaningful insights"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T03:12:32.271566"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T03:12:32.279890"
+}
+2025-10-20 03:29:33,798 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 03:29:33,799 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_fe694511
+2025-10-20 03:29:33,800 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+2025-10-20 03:29:33,800 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 03:29:33,801 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:29:33.801222] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:29:33,803 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T03:29:33.802221] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:29:33,804 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 03:29:33,805 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T03:29:33.805225] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:29:33,811 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 03:29:33,811 - agent.feedback_trainer - INFO - Execution feedback_trainer_fe694511 completed with status: SUCCESS
+2025-10-20 03:29:33,813 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "company_size_targeting",
+      "current_value": "Broad size range (100-2000 employees)",
+      "suggested_value": "Focus on 200-800 employees",
+      "reasoning": "Low reply rate suggests targeting may be too broad. Mid-market companies (200-800) typically have better response rates.",
+      "confidence": 0.7
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Campaign performance is within typical ranges"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T03:29:33.804219"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T03:29:33.811058"
+}
+2025-10-20 03:41:55,284 - agent.feedback_trainer - INFO - Google Sheets API configured successfully (mock)
+2025-10-20 03:41:55,288 - agent.feedback_trainer - INFO - Starting execution feedback_trainer_be5d4aa8
+2025-10-20 03:41:55,289 - agent.feedback_trainer - INFO - Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+2025-10-20 03:41:55,290 - agent.feedback_trainer - INFO - Input validation passed for feedback_trainer
+2025-10-20 03:41:55,291 - agent.feedback_trainer - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:41:55.291984] Agent: feedback_trainer
+Step: initial_analysis
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:41:55,292 - agent.feedback_trainer - INFO - Reasoning - analyzing_campaign_performance: 
+[2025-10-20T03:41:55.292980] Agent: feedback_trainer
+Step: analyzing_campaign_performance
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  }
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:41:55,294 - agent.feedback_trainer - INFO - Feedback logged to Google Sheets (mock implementation)
+2025-10-20 03:41:55,295 - agent.feedback_trainer - INFO - Reasoning - analysis_complete: 
+[2025-10-20T03:41:55.295514] Agent: feedback_trainer
+Step: analysis_complete
+
+Base Reasoning: I need to analyze the campaign results to identify what worked well and what can be improved for future outreach efforts.
+
+Current Inputs: {
+  "overall_score": 0.0,
+  "total_recommendations": 4,
+  "high_confidence_recommendations": 2,
+  "sheets_logged": true
+}
+
+Instructions: Analyze campaign performance, identify optimization opportunities, and generate recommendations for ICP, messaging, and targeting improvements.
+
+Available Tools: ['GoogleSheetsAPI']
+        
+2025-10-20 03:41:55,295 - agent.feedback_trainer - INFO - Output validation passed for feedback_trainer
+2025-10-20 03:41:55,296 - agent.feedback_trainer - INFO - Execution feedback_trainer_be5d4aa8 completed with status: SUCCESS
+2025-10-20 03:41:55,296 - agent.feedback_trainer - INFO - Outputs: {
+  "recommendations": [
+    {
+      "type": "company_size_targeting",
+      "current_value": "Broad size range (100-2000 employees)",
+      "suggested_value": "Focus on 200-800 employees",
+      "reasoning": "Low reply rate suggests targeting may be too broad. Mid-market companies (200-800) typically have better response rates.",
+      "confidence": 0.7
+    },
+    {
+      "type": "subject_line",
+      "current_value": "Generic/company-focused subjects",
+      "suggested_value": "Problem-focused, benefit-driven subjects",
+      "reasoning": "Open rate of 0.0% is below benchmark. Try subject lines focusing on specific pain points.",
+      "confidence": 0.8
+    },
+    {
+      "type": "email_content",
+      "current_value": "Standard value proposition",
+      "suggested_value": "Include specific metrics and case studies",
+      "reasoning": "Click rate of 0.0% suggests content lacks compelling elements. Add concrete value evidence.",
+      "confidence": 0.7
+    },
+    {
+      "type": "personalization",
+      "current_value": "Basic company and role personalization",
+      "suggested_value": "Deep research-based personalization",
+      "reasoning": "Reply rate of 0.0% indicates insufficient personalization. Reference specific company initiatives.",
+      "confidence": 0.9
+    }
+  ],
+  "performance_summary": {
+    "overall_score": 0.0,
+    "key_insights": [
+      "Campaign performance is within typical ranges"
+    ],
+    "action_items": [
+      "Implement subject_line: Problem-focused, benefit-driven subjects"
+    ],
+    "benchmark_analysis": {
+      "open_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.25,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low open rate - requires immediate attention"
+      },
+      "click_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.05,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low click rate - requires immediate attention"
+      },
+      "reply_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.02,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low reply rate - requires immediate attention"
+      },
+      "meeting_rate": {
+        "current_value": 0.0,
+        "benchmark": 0.01,
+        "performance_ratio": 0.0,
+        "status": "below_benchmark",
+        "recommendation": "Low meeting rate - requires immediate attention"
+      }
+    },
+    "analysis_timestamp": "2025-10-20T03:41:55.294495"
+  },
+  "total_recommendations": 4,
+  "high_confidence_count": 2,
+  "sheets_logged": true,
+  "analysis_timestamp": "2025-10-20T03:41:55.295514"
+}

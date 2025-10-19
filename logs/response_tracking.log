@@ -1,0 +1,3745 @@
+2025-10-20 01:55:11,830 - agent.response_tracking - INFO - Starting execution response_tracking_f6dbb7f1
+2025-10-20 01:55:11,831 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": null,
+  "sent_status": null
+}
+2025-10-20 01:55:11,831 - agent.response_tracking - ERROR - Field 'sent_status' must be a list
+2025-10-20 01:55:11,832 - agent.response_tracking - ERROR - Execution response_tracking_f6dbb7f1 failed: Input validation failed
+2025-10-20 01:55:11,832 - agent.response_tracking - INFO - Execution response_tracking_f6dbb7f1 completed with status: FAILED
+2025-10-20 01:56:37,474 - agent.response_tracking - INFO - Starting execution response_tracking_ae3efe2b
+2025-10-20 01:56:37,476 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": null,
+  "sent_status": null
+}
+2025-10-20 01:56:37,476 - agent.response_tracking - ERROR - Field 'sent_status' must be a list
+2025-10-20 01:56:37,477 - agent.response_tracking - ERROR - Execution response_tracking_ae3efe2b failed: Input validation failed
+2025-10-20 01:56:37,477 - agent.response_tracking - INFO - Execution response_tracking_ae3efe2b completed with status: FAILED
+2025-10-20 02:00:47,462 - agent.response_tracking - INFO - Starting execution response_tracking_9192f3c5
+2025-10-20 02:00:47,464 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_020047_3bb1a846",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_f98aef0d4262",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_0_techcorp_solutions_0ab6b3"
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_3dc2ac40fbae",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_1_cloudscale_systems_c562d5"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_b941ea0b1917",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_2_fintech_innovations_5a5c46"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.457368",
+      "message_id": "mock_ab2188a19ca9",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:00:47.457368",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_3_dataflow_inc_00c958"
+      }
+    }
+  ]
+}
+2025-10-20 02:00:47,465 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:00:47,466 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:00:47.466894] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_020047_3bb1a846",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_f98aef0d4262",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_0_techcorp_solutions_0ab6b3"
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_3dc2ac40fbae",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_1_cloudscale_systems_c562d5"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_b941ea0b1917",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_2_fintech_innovations_5a5c46"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.457368",
+      "message_id": "mock_ab2188a19ca9",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:00:47.457368",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_3_dataflow_inc_00c958"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:00:47,467 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:00:47.467896] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_020047_3bb1a846",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_f98aef0d4262",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_0_techcorp_solutions_0ab6b3"
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_3dc2ac40fbae",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_1_cloudscale_systems_c562d5"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.456372",
+      "message_id": "mock_b941ea0b1917",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:00:47.456372",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_2_fintech_innovations_5a5c46"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T02:00:47.457368",
+      "message_id": "mock_ab2188a19ca9",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_020047_3bb1a846",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:00:47.457368",
+        "tracking_id": "campaign_20251020_020047_3bb1a846_lead_3_dataflow_inc_00c958"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:00:47,468 - agent.response_tracking - INFO - Reasoning - tracking_analysis_complete: 
+[2025-10-20T02:00:47.468893] Agent: response_tracking
+Step: tracking_analysis_complete
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_020047_3bb1a846",
+  "total_tracked": 4,
+  "open_rate": "75.0%",
+  "reply_rate": "0.0%",
+  "meeting_rate": "0.0%"
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:00:47,469 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:00:47,470 - agent.response_tracking - INFO - Execution response_tracking_9192f3c5 completed with status: SUCCESS
+2025-10-20 02:00:47,471 - agent.response_tracking - INFO - Outputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "mock_f98aef0d4262",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "mock_3dc2ac40fbae",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T21:42:24.293159",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Denver, CO",
+        "device_type": "desktop"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "mock_b941ea0b1917",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-20T06:54:24.461346",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15",
+        "ip_location": "Seattle, WA",
+        "device_type": "mobile"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "mock_ab2188a19ca9",
+      "opened": true,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": "2025-10-21T18:26:52.567969",
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+        "ip_location": "Denver, CO",
+        "device_type": "mobile"
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 3,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.75,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_020047_3bb1a846",
+  "tracking_timestamp": "2025-10-20T02:00:47.469895",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {
+      "desktop": 1,
+      "mobile": 2
+    },
+    "average_time_to_open_hours": 30.52,
+    "best_performing_segment": "low_engagement_segment",
+    "improvement_opportunities": [
+      "Add more compelling call-to-action to increase click rates",
+      "Personalize messages further to increase response rates",
+      "Optimize email formatting for mobile devices"
+    ]
+  },
+  "total_tracked_emails": 4
+}
+2025-10-20 02:25:28,572 - agent.response_tracking - INFO - Starting execution response_tracking_292a3053
+2025-10-20 02:25:28,578 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_022524_2fee8699",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:26.326498",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:25:26.326498",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_0_techcorp_solutions_a5240c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.321100",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:25:27.321100",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_1_cloudscale_systems_128cdf"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.900568",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:25:27.900568",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_2_fintech_innovations_346069"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:28.537521",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:25:28.538186",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_3_dataflow_inc_f499ae"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:25:28,581 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:25:28,583 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:25:28.582522] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_022524_2fee8699",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:26.326498",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:25:26.326498",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_0_techcorp_solutions_a5240c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.321100",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:25:27.321100",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_1_cloudscale_systems_128cdf"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.900568",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:25:27.900568",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_2_fintech_innovations_346069"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:28.537521",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:25:28.538186",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_3_dataflow_inc_f499ae"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:25:28,585 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:25:28.584514] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_022524_2fee8699",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:26.326498",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_0_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:25:26.326498",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_0_techcorp_solutions_a5240c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.321100",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_1_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:25:27.321100",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_1_cloudscale_systems_128cdf"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:27.900568",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:25:27.900568",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_2_fintech_innovations_346069"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:25:28.537521",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_022524_2fee8699",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:25:28.538186",
+        "tracking_id": "campaign_20251020_022524_2fee8699_lead_3_dataflow_inc_f499ae"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:25:28,586 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:25:28,587 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:25:28,588 - agent.response_tracking - INFO - Execution response_tracking_292a3053 completed with status: SUCCESS
+2025-10-20 02:25:28,589 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_022524_2fee8699",
+  "tracking_timestamp": "2025-10-20T02:25:28.587526",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:35:57,760 - agent.response_tracking - INFO - Starting execution response_tracking_62738599
+2025-10-20 02:35:57,765 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_023553_2482c4d4",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:54.958028",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:35:54.958028",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_0_cloudscale_systems_1af138"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:55.872554",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:35:55.872554",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_1_techcorp_solutions_131494"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:56.732220",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:35:56.732220",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_2_fintech_innovations_9b488f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:57.694074",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:35:57.694074",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_3_dataflow_inc_43d534"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:35:57,776 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:35:57,781 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:35:57.780649] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023553_2482c4d4",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:54.958028",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:35:54.958028",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_0_cloudscale_systems_1af138"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:55.872554",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:35:55.872554",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_1_techcorp_solutions_131494"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:56.732220",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:35:56.732220",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_2_fintech_innovations_9b488f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:57.694074",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:35:57.694074",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_3_dataflow_inc_43d534"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:35:57,782 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:35:57.782647] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023553_2482c4d4",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:54.958028",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:35:54.958028",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_0_cloudscale_systems_1af138"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:55.872554",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:35:55.872554",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_1_techcorp_solutions_131494"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:56.732220",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:35:56.732220",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_2_fintech_innovations_9b488f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:35:57.694074",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023553_2482c4d4",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:35:57.694074",
+        "tracking_id": "campaign_20251020_023553_2482c4d4_lead_3_dataflow_inc_43d534"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:35:57,791 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:35:57,792 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:35:57,793 - agent.response_tracking - INFO - Execution response_tracking_62738599 completed with status: SUCCESS
+2025-10-20 02:35:57,793 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_023553_2482c4d4",
+  "tracking_timestamp": "2025-10-20T02:35:57.792665",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:36:36,912 - agent.response_tracking - INFO - Starting execution response_tracking_230b1570
+2025-10-20 02:36:36,912 - agent.response_tracking - INFO - Starting execution response_tracking_230b1570
+2025-10-20 02:36:36,913 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:36:36,913 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:36:36,922 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:36:36,922 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:36:36,928 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:36.927622] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:36:36,928 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:36.927622] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:36:36,938 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:36:36.938423] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:36:36,938 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:36:36.938423] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:33.359719",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:36:33.359719",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_0_cloudscale_systems_935426"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:34.763375",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:36:34.763375",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_1_techcorp_solutions_48a51e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:35.957766",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:36:35.957766",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_2_fintech_innovations_9cbb9a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:36:36.874501",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_023632_d9449363",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:36:36.874501",
+        "tracking_id": "campaign_20251020_023632_d9449363_lead_3_dataflow_inc_1507e3"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:36:36,949 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:36:36,949 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:36:36,957 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:36:36,957 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:36:36,972 - agent.response_tracking - INFO - Execution response_tracking_230b1570 completed with status: SUCCESS
+2025-10-20 02:36:36,972 - agent.response_tracking - INFO - Execution response_tracking_230b1570 completed with status: SUCCESS
+2025-10-20 02:36:36,984 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "tracking_timestamp": "2025-10-20T02:36:36.955047",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:36:36,984 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_023632_d9449363",
+  "tracking_timestamp": "2025-10-20T02:36:36.955047",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:43:31,679 - agent.response_tracking - INFO - Starting execution response_tracking_7e886113
+2025-10-20 02:43:31,696 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_024325_01b72e3a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:28.004104",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:43:28.004104",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_0_cloudscale_systems_fea7db"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:29.271294",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:43:29.271294",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_1_techcorp_solutions_ef9910"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:30.317855",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:43:30.317855",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_2_fintech_innovations_bcb210"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:31.666881",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:43:31.666881",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_3_dataflow_inc_046423"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:43:31,697 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:43:31,698 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:43:31.697782] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024325_01b72e3a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:28.004104",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:43:28.004104",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_0_cloudscale_systems_fea7db"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:29.271294",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:43:29.271294",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_1_techcorp_solutions_ef9910"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:30.317855",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:43:30.317855",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_2_fintech_innovations_bcb210"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:31.666881",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:43:31.666881",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_3_dataflow_inc_046423"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:43:31,700 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:43:31.700800] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024325_01b72e3a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:28.004104",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:43:28.004104",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_0_cloudscale_systems_fea7db"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:29.271294",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:43:29.271294",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_1_techcorp_solutions_ef9910"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:30.317855",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:43:30.317855",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_2_fintech_innovations_bcb210"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:43:31.666881",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024325_01b72e3a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:43:31.666881",
+        "tracking_id": "campaign_20251020_024325_01b72e3a_lead_3_dataflow_inc_046423"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:43:31,705 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:43:31,706 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:43:31,706 - agent.response_tracking - INFO - Execution response_tracking_7e886113 completed with status: SUCCESS
+2025-10-20 02:43:31,707 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_024325_01b72e3a",
+  "tracking_timestamp": "2025-10-20T02:43:31.706202",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:48:25,975 - agent.response_tracking - INFO - Starting execution response_tracking_41b558bc
+2025-10-20 02:48:25,977 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_024821_8a8ca622",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:23.218635",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:48:23.218635",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_0_cloudscale_systems_82e535"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:24.092317",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:48:24.092317",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_1_techcorp_solutions_a9ba3f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.051537",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:48:25.051537",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_2_fintech_innovations_37617d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.967330",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:48:25.967330",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_3_dataflow_inc_2b754b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:48:25,978 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:48:25,979 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:25.978646] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024821_8a8ca622",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:23.218635",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:48:23.218635",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_0_cloudscale_systems_82e535"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:24.092317",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:48:24.092317",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_1_techcorp_solutions_a9ba3f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.051537",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:48:25.051537",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_2_fintech_innovations_37617d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.967330",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:48:25.967330",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_3_dataflow_inc_2b754b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:48:25,982 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:48:25.979646] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024821_8a8ca622",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:23.218635",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:48:23.218635",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_0_cloudscale_systems_82e535"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:24.092317",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:48:24.092317",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_1_techcorp_solutions_a9ba3f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.051537",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:48:25.051537",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_2_fintech_innovations_37617d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:48:25.967330",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024821_8a8ca622",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:48:25.967330",
+        "tracking_id": "campaign_20251020_024821_8a8ca622_lead_3_dataflow_inc_2b754b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:48:25,983 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:48:25,983 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:48:25,985 - agent.response_tracking - INFO - Execution response_tracking_41b558bc completed with status: SUCCESS
+2025-10-20 02:48:25,985 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_024821_8a8ca622",
+  "tracking_timestamp": "2025-10-20T02:48:25.983644",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:49:45,939 - agent.response_tracking - INFO - Starting execution response_tracking_809d56d6
+2025-10-20 02:49:45,939 - agent.response_tracking - INFO - Starting execution response_tracking_809d56d6
+2025-10-20 02:49:45,942 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:49:45,942 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:49:45,957 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:49:45,957 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:49:45,959 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:49:45.959839] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:49:45,959 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:49:45.959839] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:49:45,962 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:49:45.961838] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:49:45,962 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:49:45.961838] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.004015",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:49:43.004015",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_0_cloudscale_systems_db4e83"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:43.976559",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:49:43.976559",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_1_techcorp_solutions_b9d11d"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:44.919724",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:49:44.919724",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_2_fintech_innovations_ee97b9"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:49:45.879773",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_024941_5b37d000",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:49:45.879773",
+        "tracking_id": "campaign_20251020_024941_5b37d000_lead_3_dataflow_inc_4dbca6"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:49:45,964 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:49:45,964 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:49:45,968 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:49:45,968 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:49:45,969 - agent.response_tracking - INFO - Execution response_tracking_809d56d6 completed with status: SUCCESS
+2025-10-20 02:49:45,969 - agent.response_tracking - INFO - Execution response_tracking_809d56d6 completed with status: SUCCESS
+2025-10-20 02:49:45,970 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "tracking_timestamp": "2025-10-20T02:49:45.968840",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:49:45,970 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_024941_5b37d000",
+  "tracking_timestamp": "2025-10-20T02:49:45.968840",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 02:57:18,300 - agent.response_tracking - INFO - Starting execution response_tracking_88c4902b
+2025-10-20 02:57:18,304 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_025712_e21aa82a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:14.870899",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:57:14.870899",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_0_cloudscale_systems_9815a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:16.761306",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:57:16.761306",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_1_techcorp_solutions_365d92"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:17.546965",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:57:17.546965",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_2_fintech_innovations_64683e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:18.288186",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:57:18.288186",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_3_dataflow_inc_ba85c2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 02:57:18,305 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 02:57:18,305 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:57:18.305508] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_025712_e21aa82a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:14.870899",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:57:14.870899",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_0_cloudscale_systems_9815a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:16.761306",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:57:16.761306",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_1_techcorp_solutions_365d92"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:17.546965",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:57:17.546965",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_2_fintech_innovations_64683e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:18.288186",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:57:18.288186",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_3_dataflow_inc_ba85c2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:57:18,310 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T02:57:18.309379] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_025712_e21aa82a",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:14.870899",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T02:57:14.870899",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_0_cloudscale_systems_9815a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:16.761306",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T02:57:16.761306",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_1_techcorp_solutions_365d92"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:17.546965",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T02:57:17.546965",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_2_fintech_innovations_64683e"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T02:57:18.288186",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_025712_e21aa82a",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T02:57:18.288186",
+        "tracking_id": "campaign_20251020_025712_e21aa82a_lead_3_dataflow_inc_ba85c2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 02:57:18,311 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 02:57:18,311 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 02:57:18,312 - agent.response_tracking - INFO - Execution response_tracking_88c4902b completed with status: SUCCESS
+2025-10-20 02:57:18,312 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_025712_e21aa82a",
+  "tracking_timestamp": "2025-10-20T02:57:18.311378",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 03:03:50,555 - agent.response_tracking - INFO - Starting execution response_tracking_b797275a
+2025-10-20 03:03:50,568 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_030346_683c1b25",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:47.819061",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:03:47.819061",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_0_cloudscale_systems_0e901a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:48.761579",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:03:48.761579",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_1_techcorp_solutions_1414e2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:49.705476",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:03:49.705476",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_2_fintech_innovations_c1443c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:50.550347",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:03:50.550347",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_3_dataflow_inc_2d9696"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 03:03:50,568 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 03:03:50,569 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:03:50.569253] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_030346_683c1b25",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:47.819061",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:03:47.819061",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_0_cloudscale_systems_0e901a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:48.761579",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:03:48.761579",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_1_techcorp_solutions_1414e2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:49.705476",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:03:49.705476",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_2_fintech_innovations_c1443c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:50.550347",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:03:50.550347",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_3_dataflow_inc_2d9696"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:03:50,617 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T03:03:50.617188] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_030346_683c1b25",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:47.819061",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:03:47.819061",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_0_cloudscale_systems_0e901a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:48.761579",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:03:48.761579",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_1_techcorp_solutions_1414e2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:49.705476",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:03:49.705476",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_2_fintech_innovations_c1443c"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:03:50.550347",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030346_683c1b25",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:03:50.550347",
+        "tracking_id": "campaign_20251020_030346_683c1b25_lead_3_dataflow_inc_2d9696"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:03:50,618 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 03:03:50,618 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 03:03:50,619 - agent.response_tracking - INFO - Execution response_tracking_b797275a completed with status: SUCCESS
+2025-10-20 03:03:50,620 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_030346_683c1b25",
+  "tracking_timestamp": "2025-10-20T03:03:50.618469",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 03:06:23,594 - agent.response_tracking - INFO - Starting execution response_tracking_1548bd27
+2025-10-20 03:06:23,595 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_030619_5de6187e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:20.722154",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:06:20.722154",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_0_cloudscale_systems_a97ca2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:21.644892",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:06:21.644892",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_1_techcorp_solutions_fb3b3b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:22.730901",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:06:22.730901",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_2_fintech_innovations_1ed770"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:23.586969",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:06:23.586969",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_3_dataflow_inc_6a7d70"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 03:06:23,595 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 03:06:23,596 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:06:23.596194] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_030619_5de6187e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:20.722154",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:06:20.722154",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_0_cloudscale_systems_a97ca2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:21.644892",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:06:21.644892",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_1_techcorp_solutions_fb3b3b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:22.730901",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:06:22.730901",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_2_fintech_innovations_1ed770"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:23.586969",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:06:23.586969",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_3_dataflow_inc_6a7d70"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:06:23,597 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T03:06:23.597192] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_030619_5de6187e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:20.722154",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:06:20.722154",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_0_cloudscale_systems_a97ca2"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:21.644892",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:06:21.644892",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_1_techcorp_solutions_fb3b3b"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:22.730901",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:06:22.730901",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_2_fintech_innovations_1ed770"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:06:23.586969",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_030619_5de6187e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:06:23.586969",
+        "tracking_id": "campaign_20251020_030619_5de6187e_lead_3_dataflow_inc_6a7d70"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:06:23,597 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 03:06:23,598 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 03:06:23,598 - agent.response_tracking - INFO - Execution response_tracking_1548bd27 completed with status: SUCCESS
+2025-10-20 03:06:23,600 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_030619_5de6187e",
+  "tracking_timestamp": "2025-10-20T03:06:23.598193",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 03:12:32,251 - agent.response_tracking - INFO - Starting execution response_tracking_3dfa9c43
+2025-10-20 03:12:32,252 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_031227_be48699e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:29.134595",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:12:29.134595",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_0_cloudscale_systems_7a6d4a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.018123",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:12:30.018123",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_1_techcorp_solutions_cb86a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.947452",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:12:30.947452",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_2_fintech_innovations_fad3c5"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:32.243200",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:12:32.243200",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_3_dataflow_inc_bb958f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+2025-10-20 03:12:32,254 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 03:12:32,257 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:12:32.254259] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_031227_be48699e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:29.134595",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:12:29.134595",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_0_cloudscale_systems_7a6d4a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.018123",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:12:30.018123",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_1_techcorp_solutions_cb86a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.947452",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:12:30.947452",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_2_fintech_innovations_fad3c5"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:32.243200",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:12:32.243200",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_3_dataflow_inc_bb958f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:12:32,259 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T03:12:32.259264] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_031227_be48699e",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:29.134595",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:12:29.134595",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_0_cloudscale_systems_7a6d4a"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.018123",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:12:30.018123",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_1_techcorp_solutions_cb86a1"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:30.947452",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:12:30.947452",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_2_fintech_innovations_fad3c5"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "failed",
+      "sent_at": "2025-10-20T03:12:32.243200",
+      "message_id": "",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_031227_be48699e",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:12:32.243200",
+        "tracking_id": "campaign_20251020_031227_be48699e_lead_3_dataflow_inc_bb958f"
+      },
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:12:32,260 - agent.response_tracking - WARNING - No successfully sent emails to track
+2025-10-20 03:12:32,260 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 03:12:32,260 - agent.response_tracking - INFO - Execution response_tracking_3dfa9c43 completed with status: SUCCESS
+2025-10-20 03:12:32,261 - agent.response_tracking - INFO - Outputs: {
+  "responses": [],
+  "metrics": {
+    "total_sent": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_031227_be48699e",
+  "tracking_timestamp": "2025-10-20T03:12:32.260575",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "no_data",
+    "improvement_opportunities": [
+      "No sent emails to analyze"
+    ]
+  }
+}
+2025-10-20 03:29:33,767 - agent.response_tracking - INFO - Starting execution response_tracking_e46aba51
+2025-10-20 03:29:33,769 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_032929_ce367844",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:31.502809",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:29:31.505331",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_0_cloudscale_systems_71b860"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:32.253935",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:29:32.258930",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_1_techcorp_solutions_18aaa0"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.014841",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:29:33.019397",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_2_fintech_innovations_e2ff6b"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.745096",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:29:33.748092",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_3_dataflow_inc_e9c786"
+      }
+    }
+  ]
+}
+2025-10-20 03:29:33,771 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 03:29:33,779 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:29:33.779348] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_032929_ce367844",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:31.502809",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:29:31.505331",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_0_cloudscale_systems_71b860"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:32.253935",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:29:32.258930",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_1_techcorp_solutions_18aaa0"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.014841",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:29:33.019397",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_2_fintech_innovations_e2ff6b"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.745096",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:29:33.748092",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_3_dataflow_inc_e9c786"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:29:33,781 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T03:29:33.781349] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_032929_ce367844",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:31.502809",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:29:31.505331",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_0_cloudscale_systems_71b860"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:32.253935",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:29:32.258930",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_1_techcorp_solutions_18aaa0"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.014841",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:29:33.019397",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_2_fintech_innovations_e2ff6b"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:29:33.745096",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_032929_ce367844",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:29:33.748092",
+        "tracking_id": "campaign_20251020_032929_ce367844_lead_3_dataflow_inc_e9c786"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:29:33,782 - agent.response_tracking - INFO - Reasoning - tracking_analysis_complete: 
+[2025-10-20T03:29:33.782346] Agent: response_tracking
+Step: tracking_analysis_complete
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_032929_ce367844",
+  "total_tracked": 4,
+  "open_rate": "0.0%",
+  "reply_rate": "0.0%",
+  "meeting_rate": "0.0%"
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:29:33,784 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 03:29:33,784 - agent.response_tracking - INFO - Execution response_tracking_e46aba51 completed with status: SUCCESS
+2025-10-20 03:29:33,786 - agent.response_tracking - INFO - Outputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "zUQb5buKTfCMbXAT9Q7BZw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "jce2WrD9Tai_8ZfZCNgvtw",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "bsu6J_4fT1qO60TulUcrVA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "Gq-5QUanQzO6oGLWoYObUg",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_032929_ce367844",
+  "tracking_timestamp": "2025-10-20T03:29:33.783349",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "low_engagement_segment",
+    "improvement_opportunities": [
+      "Consider improving subject lines to increase open rates",
+      "Add more compelling call-to-action to increase click rates",
+      "Personalize messages further to increase response rates"
+    ]
+  },
+  "total_tracked_emails": 4
+}
+2025-10-20 03:41:55,245 - agent.response_tracking - INFO - Starting execution response_tracking_9fb6cd44
+2025-10-20 03:41:55,250 - agent.response_tracking - INFO - Inputs: {
+  "campaign_id": "campaign_20251020_034147_3c5ff85c",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:49.767360",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:41:49.878777",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_0_cloudscale_systems_790e99"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:53.359309",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:41:53.364307",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_1_techcorp_solutions_629286"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:54.458833",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:41:54.462838",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_2_fintech_innovations_e38b48"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:55.181482",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:41:55.188484",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_3_dataflow_inc_0c731a"
+      }
+    }
+  ]
+}
+2025-10-20 03:41:55,258 - agent.response_tracking - INFO - Input validation passed for response_tracking
+2025-10-20 03:41:55,261 - agent.response_tracking - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:41:55.260899] Agent: response_tracking
+Step: initial_analysis
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_034147_3c5ff85c",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:49.767360",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:41:49.878777",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_0_cloudscale_systems_790e99"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:53.359309",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:41:53.364307",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_1_techcorp_solutions_629286"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:54.458833",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:41:54.462838",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_2_fintech_innovations_e38b48"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:55.181482",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:41:55.188484",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_3_dataflow_inc_0c731a"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:41:55,263 - agent.response_tracking - INFO - Reasoning - analyzing_campaign_engagement: 
+[2025-10-20T03:41:55.262896] Agent: response_tracking
+Step: analyzing_campaign_engagement
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_034147_3c5ff85c",
+  "sent_status": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:49.767360",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_0_cloudscale_systems",
+        "sent_timestamp": "2025-10-20T03:41:49.878777",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_0_cloudscale_systems_790e99"
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:53.359309",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_1_techcorp_solutions",
+        "sent_timestamp": "2025-10-20T03:41:53.364307",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_1_techcorp_solutions_629286"
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:54.458833",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_2_fintech_innovations",
+        "sent_timestamp": "2025-10-20T03:41:54.462838",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_2_fintech_innovations_e38b48"
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "status": "sent",
+      "sent_at": "2025-10-20T03:41:55.181482",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "tracking_metadata": {
+        "campaign_id": "campaign_20251020_034147_3c5ff85c",
+        "lead_id": "lead_3_dataflow_inc",
+        "sent_timestamp": "2025-10-20T03:41:55.188484",
+        "tracking_id": "campaign_20251020_034147_3c5ff85c_lead_3_dataflow_inc_0c731a"
+      }
+    }
+  ]
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:41:55,263 - agent.response_tracking - INFO - Reasoning - tracking_analysis_complete: 
+[2025-10-20T03:41:55.263898] Agent: response_tracking
+Step: tracking_analysis_complete
+
+Base Reasoning: I need to track engagement metrics to understand campaign performance and identify opportunities for optimization.
+
+Current Inputs: {
+  "campaign_id": "campaign_20251020_034147_3c5ff85c",
+  "total_tracked": 4,
+  "open_rate": "0.0%",
+  "reply_rate": "0.0%",
+  "meeting_rate": "0.0%"
+}
+
+Instructions: Monitor email responses, opens, clicks, and meeting bookings. Track engagement metrics for optimization.
+
+Available Tools: ['SendGridAPI']
+        
+2025-10-20 03:41:55,265 - agent.response_tracking - INFO - Output validation passed for response_tracking
+2025-10-20 03:41:55,265 - agent.response_tracking - INFO - Execution response_tracking_9fb6cd44 completed with status: SUCCESS
+2025-10-20 03:41:55,266 - agent.response_tracking - INFO - Outputs: {
+  "responses": [
+    {
+      "lead_id": "lead_0_cloudscale_systems",
+      "email": "jennifer.martinez@cloudscale.com",
+      "message_id": "ewL5PsK5T4KZX4mriEbwpQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_1_techcorp_solutions",
+      "email": "sarah.johnson@techcorp.com",
+      "message_id": "bY8sgFZcSXKut2QR74C7zQ",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_2_fintech_innovations",
+      "email": "robert.kim@fintech-innov.com",
+      "message_id": "PI8DVTIqSRqwpcc5BRboBA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    },
+    {
+      "lead_id": "lead_3_dataflow_inc",
+      "email": "m.chen@dataflow.com",
+      "message_id": "GGsbiYwhSs68b7jMVGoXMA",
+      "opened": false,
+      "clicked": false,
+      "replied": false,
+      "meeting_booked": false,
+      "response_sentiment": null,
+      "open_time": null,
+      "click_time": null,
+      "reply_time": null,
+      "tracking_data": {
+        "user_agent": null,
+        "ip_location": null,
+        "device_type": null
+      }
+    }
+  ],
+  "metrics": {
+    "total_sent": 4,
+    "opens": 0,
+    "clicks": 0,
+    "replies": 0,
+    "meetings": 0,
+    "open_rate": 0.0,
+    "click_rate": 0.0,
+    "reply_rate": 0.0,
+    "meeting_rate": 0.0,
+    "click_to_open_rate": 0.0,
+    "meeting_to_reply_rate": 0.0
+  },
+  "campaign_id": "campaign_20251020_034147_3c5ff85c",
+  "tracking_timestamp": "2025-10-20T03:41:55.265412",
+  "analysis": {
+    "sentiment_breakdown": {},
+    "device_breakdown": {},
+    "average_time_to_open_hours": 0,
+    "best_performing_segment": "low_engagement_segment",
+    "improvement_opportunities": [
+      "Consider improving subject lines to increase open rates",
+      "Add more compelling call-to-action to increase click rates",
+      "Personalize messages further to increase response rates"
+    ]
+  },
+  "total_tracked_emails": 4
+}

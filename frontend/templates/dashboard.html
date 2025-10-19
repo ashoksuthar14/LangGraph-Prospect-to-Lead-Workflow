@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospect to Lead Workflow Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="fas fa-chart-line me-2"></i>
+                Prospect to Lead Workflow Dashboard
+            </span>
+            <div class="d-flex">
+                <button id="startBtn" class="btn btn-success me-2" onclick="startWorkflow()">
+                    <i class="fas fa-play me-1"></i>Start Workflow
+                </button>
+                <button id="stopBtn" class="btn btn-danger" onclick="stopWorkflow()" disabled>
+                    <i class="fas fa-stop me-1"></i>Stop
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <!-- Status Row -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5><i class="fas fa-info-circle me-2"></i>Workflow Status</h5>
+                        <div id="statusBadge" class="badge bg-secondary">Idle</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress mb-3" style="height: 25px;">
+                            <div id="progressBar" class="progress-bar progress-bar-striped" 
+                                 role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                0%
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>Current Step:</strong> <span id="currentStep">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Start Time:</strong> <span id="startTime">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Duration:</strong> <span id="duration">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>Status:</strong> <span id="workflowStatus">Idle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- Left Column: Workflow Steps -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5><i class="fas fa-tasks me-2"></i>Workflow Steps</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="workflowSteps" class="workflow-steps">
+                            <!-- Steps will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Column: Environment & Logs -->
+            <div class="col-md-4">
+                <!-- Environment Status -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h6><i class="fas fa-key me-2"></i>API Keys Status</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="environmentStatus">
+                            <!-- Environment status will be populated -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Logs -->
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h6><i class="fas fa-file-alt me-2"></i>Live Logs</h6>
+                        <select id="agentSelect" class="form-select form-select-sm" style="width: auto;">
+                            <option value="">Select Agent</option>
+                        </select>
+                    </div>
+                    <div class="card-body">
+                        <div id="liveLogsContainer" class="logs-container">
+                            <div class="text-muted">Select an agent to view logs...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Results & Analytics -->
+            <div class="col-md-4">
+                <!-- Metrics -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h6><i class="fas fa-chart-bar me-2"></i>Campaign Metrics</h6>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="metricsChart" height="200"></canvas>
+                    </div>
+                </div>
+
+                <!-- Results Summary -->
+                <div class="card">
+                    <div class="card-header">
+                        <h6><i class="fas fa-trophy me-2"></i>Results Summary</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="resultsSummary">
+                            <div class="text-muted">No results yet...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Detailed Results -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="leads-tab" data-bs-toggle="tab" href="#leads">
+                                    <i class="fas fa-users me-1"></i>Leads Found
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="messages-tab" data-bs-toggle="tab" href="#messages">
+                                    <i class="fas fa-envelope me-1"></i>Generated Messages
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="recommendations-tab" data-bs-toggle="tab" href="#recommendations">
+                                    <i class="fas fa-lightbulb me-1"></i>AI Recommendations
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="errors-tab" data-bs-toggle="tab" href="#errors">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>Errors
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="leads">
+                                <div id="leadsTable"></div>
+                            </div>
+                            <div class="tab-pane fade" id="messages">
+                                <div id="messagesTable"></div>
+                            </div>
+                            <div class="tab-pane fade" id="recommendations">
+                                <div id="recommendationsTable"></div>
+                            </div>
+                            <div class="tab-pane fade" id="errors">
+                                <div id="errorsTable"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="errorModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Global variables
+        let workflowConfig = {{ workflow_config|tojson }};
+        let envStatus = {{ env_status|tojson }};
+        let refreshInterval;
+        let metricsChart;
+
+        // Initialize dashboard when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeDashboard();
+            startPeriodicRefresh();
+        });
+
+        function initializeDashboard() {
+            displayWorkflowSteps();
+            displayEnvironmentStatus();
+            populateAgentSelect();
+            initializeMetricsChart();
+            refreshStatus();
+            // Auto-load results if available
+            loadResults();
+        }
+
+        function startPeriodicRefresh() {
+            // Refresh every 2 seconds
+            refreshInterval = setInterval(refreshStatus, 2000);
+        }
+
+        function displayWorkflowSteps() {
+            const container = document.getElementById('workflowSteps');
+            if (!workflowConfig.steps) return;
+
+            container.innerHTML = workflowConfig.steps.map((step, index) => `
+                <div class="workflow-step mb-3" id="step-${step.id}">
+                    <div class="d-flex align-items-center">
+                        <div class="step-indicator me-3">
+                            <div class="step-number">${index + 1}</div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">${step.agent}</h6>
+                            <small class="text-muted">${step.id}</small>
+                            <div class="step-status mt-1">
+                                <span class="badge bg-secondary">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayEnvironmentStatus() {
+            const container = document.getElementById('environmentStatus');
+            if (!envStatus || envStatus.error) {
+                container.innerHTML = `<div class="text-danger">Error loading environment status</div>`;
+                return;
+            }
+
+            container.innerHTML = Object.entries(envStatus).map(([key, isValid]) => `
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="small">${key}</span>
+                    <span class="badge ${isValid ? 'bg-success' : 'bg-danger'}">
+                        <i class="fas ${isValid ? 'fa-check' : 'fa-times'} me-1"></i>
+                        ${isValid ? 'OK' : 'Missing'}
+                    </span>
+                </div>
+            `).join('');
+        }
+
+        function populateAgentSelect() {
+            const select = document.getElementById('agentSelect');
+            if (!workflowConfig.steps) return;
+
+            const agents = workflowConfig.steps.map(step => step.id);
+            select.innerHTML = '<option value="">Select Agent</option>' + 
+                agents.map(agent => `<option value="${agent}">${agent}</option>`).join('');
+            
+            select.addEventListener('change', function() {
+                if (this.value) {
+                    loadLogs(this.value);
+                } else {
+                    document.getElementById('liveLogsContainer').innerHTML = 
+                        '<div class="text-muted">Select an agent to view logs...</div>';
+                }
+            });
+        }
+
+        function initializeMetricsChart() {
+            const ctx = document.getElementById('metricsChart').getContext('2d');
+            metricsChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Open Rate', 'Click Rate', 'Reply Rate', 'Meeting Rate'],
+                    datasets: [{
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#28a745', '#ffc107', '#17a2b8', '#dc3545']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function refreshStatus() {
+            fetch('/api/status')
+                .then(response => response.json())
+                .then(data => {
+                    updateProgressBar(data.progress || 0);
+                    updateStatusInfo(data);
+                    updateWorkflowSteps(data.current_step);
+                    updateButtons(data.running);
+                })
+                .catch(error => {
+                    console.error('Error fetching status:', error);
+                });
+        }
+
+        function updateProgressBar(progress) {
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = progress + '%';
+            progressBar.textContent = progress + '%';
+            progressBar.setAttribute('aria-valuenow', progress);
+
+            if (progress === 100) {
+                progressBar.classList.remove('progress-bar-striped', 'progress-bar-animated');
+                progressBar.classList.add('bg-success');
+            } else if (progress > 0) {
+                progressBar.classList.add('progress-bar-striped', 'progress-bar-animated');
+                progressBar.classList.remove('bg-success');
+            }
+        }
+
+        function updateStatusInfo(data) {
+            document.getElementById('currentStep').textContent = data.current_step || '-';
+            document.getElementById('startTime').textContent = data.start_time ? 
+                new Date(data.start_time).toLocaleTimeString() : '-';
+            
+            if (data.start_time) {
+                const duration = data.end_time ? 
+                    ((new Date(data.end_time) - new Date(data.start_time)) / 1000) :
+                    ((new Date() - new Date(data.start_time)) / 1000);
+                document.getElementById('duration').textContent = formatDuration(duration);
+            } else {
+                document.getElementById('duration').textContent = '-';
+            }
+
+            const statusBadge = document.getElementById('statusBadge');
+            const workflowStatus = document.getElementById('workflowStatus');
+            
+            let status, badgeClass;
+            if (data.running) {
+                status = 'Running';
+                badgeClass = 'bg-primary';
+            } else if (data.current_step === 'completed') {
+                status = 'Completed';
+                badgeClass = 'bg-success';
+            } else if (data.current_step === 'failed') {
+                status = 'Failed';
+                badgeClass = 'bg-danger';
+            } else if (data.current_step === 'stopped') {
+                status = 'Stopped';
+                badgeClass = 'bg-warning';
+            } else {
+                status = 'Idle';
+                badgeClass = 'bg-secondary';
+            }
+
+            statusBadge.textContent = status;
+            statusBadge.className = `badge ${badgeClass}`;
+            workflowStatus.textContent = status;
+
+            // Load results when workflow completes
+            if (data.current_step === 'completed' && data.results) {
+                loadResults();
+            }
+        }
+
+        function updateWorkflowSteps(currentStep) {
+            if (!workflowConfig.steps) return;
+
+            workflowConfig.steps.forEach((step, index) => {
+                const stepElement = document.getElementById(`step-${step.id}`);
+                if (!stepElement) return;
+
+                const statusBadge = stepElement.querySelector('.step-status .badge');
+                const stepIndicator = stepElement.querySelector('.step-number');
+
+                if (step.id === currentStep) {
+                    statusBadge.textContent = 'Running';
+                    statusBadge.className = 'badge bg-primary';
+                    stepIndicator.className = 'step-number active';
+                } else {
+                    // Check if this step has been completed (rough estimation)
+                    const stepIndex = workflowConfig.steps.findIndex(s => s.id === currentStep);
+                    const currentIndex = workflowConfig.steps.findIndex(s => s.id === step.id);
+                    
+                    if (stepIndex > currentIndex || currentStep === 'completed') {
+                        statusBadge.textContent = 'Completed';
+                        statusBadge.className = 'badge bg-success';
+                        stepIndicator.className = 'step-number completed';
+                    } else {
+                        statusBadge.textContent = 'Pending';
+                        statusBadge.className = 'badge bg-secondary';
+                        stepIndicator.className = 'step-number';
+                    }
+                }
+            });
+        }
+
+        function updateButtons(running) {
+            const startBtn = document.getElementById('startBtn');
+            const stopBtn = document.getElementById('stopBtn');
+
+            startBtn.disabled = running;
+            stopBtn.disabled = !running;
+        }
+
+        function formatDuration(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}m ${secs}s`;
+        }
+
+        function startWorkflow() {
+            fetch('/api/start', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    }
+                })
+                .catch(error => {
+                    showError('Failed to start workflow: ' + error.message);
+                });
+        }
+
+        function stopWorkflow() {
+            fetch('/api/stop', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    }
+                })
+                .catch(error => {
+                    showError('Failed to stop workflow: ' + error.message);
+                });
+        }
+
+        function loadLogs(agentName) {
+            fetch(`/api/logs/${agentName}`)
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('liveLogsContainer');
+                    if (data.logs && data.logs.length > 0) {
+                        container.innerHTML = data.logs.map(log => 
+                            `<div class="log-entry">${log.replace(/\n$/, '')}</div>`
+                        ).join('');
+                        container.scrollTop = container.scrollHeight;
+                    } else {
+                        container.innerHTML = '<div class="text-muted">No logs available for this agent.</div>';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('liveLogsContainer').innerHTML = 
+                        '<div class="text-danger">Error loading logs</div>';
+                });
+        }
+
+        function loadResults() {
+            Promise.all([
+                fetch('/api/results').then(r => r.json()),
+                fetch('/api/campaign-feedback').then(r => r.json())
+            ])
+            .then(([results, feedback]) => {
+                displayResults(results, feedback);
+                updateMetricsChart(feedback);
+            })
+            .catch(error => {
+                console.error('Error loading results:', error);
+            });
+        }
+
+        function displayResults(results, feedback) {
+            // Display leads - check direct structure first
+            if (results.leads) {
+                displayLeadsTable(results.leads);
+            } else if (results.prospect_search && results.prospect_search.leads) {
+                displayLeadsTable(results.prospect_search.leads);
+            }
+
+            // Display messages - check direct structure first
+            if (results.messages) {
+                displayMessagesTable(results.messages);
+            } else if (results.outreach_content && results.outreach_content.messages) {
+                displayMessagesTable(results.outreach_content.messages);
+            }
+
+            // Display recommendations
+            if (feedback && feedback.recommendations) {
+                displayRecommendationsTable(feedback.recommendations);
+            }
+
+            // Display summary
+            displayResultsSummary(results, feedback);
+        }
+
+        function displayLeadsTable(leads) {
+            const container = document.getElementById('leadsTable');
+            if (!leads || leads.length === 0) {
+                container.innerHTML = '<div class="text-muted">No leads found.</div>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Title</th>
+                                <th>Email</th>
+                                <th>Industry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${leads.map(lead => `
+                                <tr>
+                                    <td>${lead.company || '-'}</td>
+                                    <td>${lead.contact_name || '-'}</td>
+                                    <td>${lead.title || '-'}</td>
+                                    <td>${lead.email || '-'}</td>
+                                    <td>${lead.industry || '-'}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function displayMessagesTable(messages) {
+            const container = document.getElementById('messagesTable');
+            if (!messages || messages.length === 0) {
+                container.innerHTML = '<div class="text-muted">No messages generated.</div>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Lead ID</th>
+                                <th>Subject</th>
+                                <th>Preview</th>
+                                <th>Words</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${messages.map(msg => `
+                                <tr>
+                                    <td>${msg.lead_id || '-'}</td>
+                                    <td>${msg.subject_line || '-'}</td>
+                                    <td>${(msg.email_body || '').substring(0, 100)}...</td>
+                                    <td>${msg.word_count || 0}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function displayRecommendationsTable(recommendations) {
+            const container = document.getElementById('recommendationsTable');
+            if (!recommendations || recommendations.length === 0) {
+                container.innerHTML = '<div class="text-muted">No recommendations available.</div>';
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Current</th>
+                                <th>Suggested</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${recommendations.map(rec => `
+                                <tr>
+                                    <td>${rec.type || '-'}</td>
+                                    <td>${rec.current_value || '-'}</td>
+                                    <td>${rec.suggested_value || '-'}</td>
+                                    <td>
+                                        <span class="badge ${rec.confidence > 0.8 ? 'bg-success' : rec.confidence > 0.6 ? 'bg-warning' : 'bg-secondary'}">
+                                            ${Math.round((rec.confidence || 0) * 100)}%
+                                        </span>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function displayResultsSummary(results, feedback) {
+            const container = document.getElementById('resultsSummary');
+            
+            // Extract data from the actual API response structure
+            const leadsCount = results.leads_found || (results.leads ? results.leads.length : 0);
+            const messagesCount = results.messages_generated || (results.messages ? results.messages.length : 0);
+            const sentCount = results.emails_sent || 0;
+            const overallScore = results.ai_score || 0;
+
+            container.innerHTML = `
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="metric-card text-center p-2 border rounded">
+                            <h5 class="text-primary mb-1">${leadsCount}</h5>
+                            <small class="text-muted">Leads Found</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="metric-card text-center p-2 border rounded">
+                            <h5 class="text-success mb-1">${messagesCount}</h5>
+                            <small class="text-muted">Messages Generated</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="metric-card text-center p-2 border rounded">
+                            <h5 class="text-info mb-1">${sentCount}</h5>
+                            <small class="text-muted">Emails Sent</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="metric-card text-center p-2 border rounded">
+                            <h5 class="text-warning mb-1">${overallScore.toFixed(1)}/10</h5>
+                            <small class="text-muted">AI Score</small>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateMetricsChart(feedback) {
+            if (!feedback || !feedback.performance_summary || !feedback.performance_summary.benchmark_analysis) {
+                return;
+            }
+
+            const benchmark = feedback.performance_summary.benchmark_analysis;
+            const data = [
+                (benchmark.open_rate && benchmark.open_rate.current_value) || 0,
+                (benchmark.click_rate && benchmark.click_rate.current_value) || 0,
+                (benchmark.reply_rate && benchmark.reply_rate.current_value) || 0,
+                (benchmark.meeting_rate && benchmark.meeting_rate.current_value) || 0
+            ];
+
+            metricsChart.data.datasets[0].data = data.map(val => Math.round(val * 100));
+            metricsChart.update();
+        }
+
+        function showError(message) {
+            document.getElementById('errorModalBody').textContent = message;
+            new bootstrap.Modal(document.getElementById('errorModal')).show();
+        }
+    </script>
+</body>
+</html>

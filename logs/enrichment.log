@@ -1,0 +1,5969 @@
+2025-10-20 01:55:11,803 - agent.enrichment - INFO - Starting execution enrichment_2727d009
+2025-10-20 01:55:11,804 - agent.enrichment - INFO - Inputs: {
+  "leads": null
+}
+2025-10-20 01:55:11,805 - agent.enrichment - ERROR - Field 'leads' must be a list
+2025-10-20 01:55:11,805 - agent.enrichment - ERROR - Execution enrichment_2727d009 failed: Input validation failed
+2025-10-20 01:55:11,806 - agent.enrichment - INFO - Execution enrichment_2727d009 completed with status: FAILED
+2025-10-20 01:56:37,461 - agent.enrichment - INFO - Starting execution enrichment_e03a6d14
+2025-10-20 01:56:37,462 - agent.enrichment - INFO - Inputs: {
+  "leads": null
+}
+2025-10-20 01:56:37,463 - agent.enrichment - ERROR - Field 'leads' must be a list
+2025-10-20 01:56:37,463 - agent.enrichment - ERROR - Execution enrichment_e03a6d14 failed: Input validation failed
+2025-10-20 01:56:37,463 - agent.enrichment - INFO - Execution enrichment_e03a6d14 completed with status: FAILED
+2025-10-20 02:00:37,052 - agent.enrichment - INFO - Starting execution enrichment_073c3a0e
+2025-10-20 02:00:37,053 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:00:37,053 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:00:37,054 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:00:37.054944] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:00:37,054 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:00:37.054944] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:00:37,056 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:00:39,945 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:00:39,952 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:00:41,478 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:00:41,482 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:00:42,900 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:00:42,903 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:00:44,434 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:00:44,437 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:00:44.437254] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:00:44,438 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:00:44,438 - agent.enrichment - INFO - Execution enrichment_073c3a0e completed with status: SUCCESS
+2025-10-20 02:00:44,439 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:00:39.952365",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:00:41.482251",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:00:42.903930",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:00:44.437254",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:25:17,427 - agent.enrichment - INFO - Starting execution enrichment_4d59638c
+2025-10-20 02:25:17,432 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:25:17,435 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:25:17,439 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:25:17.436014] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:25:17,444 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:25:17.444013] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:25:17,446 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:25:19,322 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:25:19,328 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:25:20,711 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:25:20,718 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:25:22,165 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:25:22,168 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:25:22,762 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:25:22,767 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:25:22.767812] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:25:22,769 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:25:22,769 - agent.enrichment - INFO - Execution enrichment_4d59638c completed with status: SUCCESS
+2025-10-20 02:25:22,770 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:25:19.328604",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:25:20.718713",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:25:22.168888",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:25:22.767812",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:35:42,174 - agent.enrichment - INFO - Starting execution enrichment_5b6b6bdd
+2025-10-20 02:35:42,175 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:35:42,176 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:35:42,176 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:35:42.176569] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:35:42,177 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:35:42.177575] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:35:42,178 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:35:44,028 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:35:44,037 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:35:45,443 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:35:45,447 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:35:47,353 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:35:47,360 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:35:49,247 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:35:49,430 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:35:49.430207] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:35:49,578 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:35:49,623 - agent.enrichment - INFO - Execution enrichment_5b6b6bdd completed with status: SUCCESS
+2025-10-20 02:35:49,661 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:35:44.037961",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:35:45.447501",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:35:47.360791",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:35:49.430207",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:36:26,231 - agent.enrichment - INFO - Starting execution enrichment_a811858a
+2025-10-20 02:36:26,231 - agent.enrichment - INFO - Starting execution enrichment_a811858a
+2025-10-20 02:36:26,233 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:36:26,233 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:36:26,235 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:36:26,235 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:36:26,236 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:26.236474] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:26,236 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:36:26.236474] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:26,238 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:36:26.238996] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:26,238 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:36:26.238996] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:26,241 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:36:26,241 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:36:27,692 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:27,692 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:27,703 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:36:27,703 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:36:28,352 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:28,352 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:28,358 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:36:28,358 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:36:28,962 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:28,962 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:28,965 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:36:28,965 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:36:29,563 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:29,563 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:36:29,565 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:36:29.565789] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:29,565 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:36:29.565789] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:36:29,566 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:36:29,566 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:36:29,570 - agent.enrichment - INFO - Execution enrichment_a811858a completed with status: SUCCESS
+2025-10-20 02:36:29,570 - agent.enrichment - INFO - Execution enrichment_a811858a completed with status: SUCCESS
+2025-10-20 02:36:29,572 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:27.703547",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:28.358125",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:28.965960",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:29.565789",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:36:29,572 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:27.703547",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:28.358125",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:28.965960",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:36:29.565789",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:42:32,885 - agent.enrichment - INFO - Starting execution enrichment_8ede0f96
+2025-10-20 02:42:32,886 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:42:32,886 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:42:32,887 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:42:32.887447] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:42:32,887 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:42:32.887447] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:42:32,888 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:42:35,289 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:42:35,297 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:42:38,119 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:42:38,123 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:42:39,152 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:42:39,155 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:42:40,964 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:42:40,969 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:42:40.969268] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:42:40,970 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:42:40,970 - agent.enrichment - INFO - Execution enrichment_8ede0f96 completed with status: SUCCESS
+2025-10-20 02:42:40,970 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:42:35.297550",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:42:38.122855",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:42:39.155527",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:42:40.969268",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:47:32,357 - agent.enrichment - INFO - Starting execution enrichment_07d68489
+2025-10-20 02:47:32,361 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:47:32,365 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:47:32,367 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:47:32.367832] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:47:32,370 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:47:32.369847] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:47:32,381 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:47:35,214 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:47:35,220 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:47:37,767 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:47:37,771 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:47:39,227 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:47:39,233 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:47:40,627 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:47:40,633 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:47:40.633345] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:47:40,635 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:47:40,636 - agent.enrichment - INFO - Execution enrichment_07d68489 completed with status: SUCCESS
+2025-10-20 02:47:40,639 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:47:35.220399",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:47:37.771458",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:47:39.233609",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:47:40.633345",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:48:57,968 - agent.enrichment - INFO - Starting execution enrichment_e35a0018
+2025-10-20 02:48:57,968 - agent.enrichment - INFO - Starting execution enrichment_e35a0018
+2025-10-20 02:48:57,970 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:48:57,970 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:48:57,971 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:48:57,971 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:48:57,972 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:57.972412] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:48:57,972 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:48:57.972412] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:48:57,975 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:48:57.975417] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:48:57,975 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:48:57.975417] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:48:57,977 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:48:57,977 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:48:59,144 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:48:59,144 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:48:59,153 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:48:59,153 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:48:59,682 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:48:59,682 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:48:59,686 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:48:59,686 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:49:00,225 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:49:00,225 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:49:00,230 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:49:00,230 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:49:00,716 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:49:00,716 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:49:00,727 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:49:00.727709] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:49:00,727 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:49:00.727709] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:49:00,728 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:49:00,728 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:49:00,729 - agent.enrichment - INFO - Execution enrichment_e35a0018 completed with status: SUCCESS
+2025-10-20 02:49:00,729 - agent.enrichment - INFO - Execution enrichment_e35a0018 completed with status: SUCCESS
+2025-10-20 02:49:00,730 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:48:59.153306",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:48:59.686503",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:49:00.230665",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:49:00.727709",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:49:00,730 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:48:59.153306",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:48:59.686503",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:49:00.230665",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:49:00.727709",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 02:56:28,631 - agent.enrichment - INFO - Starting execution enrichment_1fd71cd1
+2025-10-20 02:56:28,632 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 02:56:28,635 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 02:56:28,636 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T02:56:28.635475] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:56:28,642 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T02:56:28.637484] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:56:28,643 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 02:56:29,896 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:56:29,900 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 02:56:30,826 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:56:30,830 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 02:56:31,762 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:56:31,765 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 02:56:32,591 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 02:56:32,594 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T02:56:32.594474] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 02:56:32,595 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 02:56:32,595 - agent.enrichment - INFO - Execution enrichment_1fd71cd1 completed with status: SUCCESS
+2025-10-20 02:56:32,596 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:56:29.900732",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:56:30.830111",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:56:31.765313",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T02:56:32.594474",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 03:03:00,855 - agent.enrichment - INFO - Starting execution enrichment_26a209e6
+2025-10-20 03:03:00,856 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 03:03:00,856 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 03:03:00,857 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:03:00.857250] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:03:00,858 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T03:03:00.858527] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:03:00,863 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 03:03:01,758 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:03:01,872 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 03:03:02,461 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:03:02,469 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 03:03:03,014 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:03:03,022 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 03:03:03,560 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:03:03,567 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T03:03:03.567251] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:03:03,568 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 03:03:03,568 - agent.enrichment - INFO - Execution enrichment_26a209e6 completed with status: SUCCESS
+2025-10-20 03:03:03,569 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:03:01.872922",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:03:02.469739",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:03:03.022573",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:03:03.567251",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 03:05:37,014 - agent.enrichment - INFO - Starting execution enrichment_e9de2bea
+2025-10-20 03:05:37,015 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 03:05:37,016 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 03:05:37,016 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:05:37.016912] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:05:37,020 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T03:05:37.016912] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:05:37,020 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 03:05:37,598 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:05:37,621 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 03:05:38,156 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:05:38,159 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 03:05:38,676 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:05:38,682 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 03:05:39,150 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:05:39,158 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T03:05:39.157657] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:05:39,158 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 03:05:39,158 - agent.enrichment - INFO - Execution enrichment_e9de2bea completed with status: SUCCESS
+2025-10-20 03:05:39,159 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:05:37.621964",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:05:38.159053",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:05:38.682858",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:05:39.157657",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 03:11:45,336 - agent.enrichment - INFO - Starting execution enrichment_0be3f0a1
+2025-10-20 03:11:45,338 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 03:11:45,339 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 03:11:45,340 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:11:45.339973] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:11:45,344 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T03:11:45.341971] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:11:45,352 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 03:11:46,059 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:11:46,067 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 03:11:46,640 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:11:46,648 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 03:11:47,162 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:11:47,166 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 03:11:48,100 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:11:48,363 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T03:11:48.363809] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:11:48,443 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 03:11:48,657 - agent.enrichment - INFO - Execution enrichment_0be3f0a1 completed with status: SUCCESS
+2025-10-20 03:11:48,690 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:11:46.067362",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:11:46.648248",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:11:47.166576",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:11:48.363809",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 03:28:46,479 - agent.enrichment - INFO - Starting execution enrichment_68c3e5bf
+2025-10-20 03:28:46,480 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 03:28:46,481 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 03:28:46,484 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:28:46.484578] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:28:46,490 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T03:28:46.490578] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:28:46,496 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 03:28:47,831 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:28:47,835 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 03:28:49,009 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:28:49,015 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 03:28:49,795 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:28:49,804 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 03:28:51,068 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:28:51,300 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T03:28:51.255281] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:28:51,381 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 03:28:51,444 - agent.enrichment - INFO - Execution enrichment_68c3e5bf completed with status: SUCCESS
+2025-10-20 03:28:51,545 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:28:47.835689",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:28:49.015497",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:28:49.804021",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:28:51.254303",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
+2025-10-20 03:41:08,906 - agent.enrichment - INFO - Starting execution enrichment_83fd2966
+2025-10-20 03:41:08,912 - agent.enrichment - INFO - Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+2025-10-20 03:41:08,913 - agent.enrichment - INFO - Input validation passed for enrichment
+2025-10-20 03:41:08,914 - agent.enrichment - INFO - Reasoning - initial_analysis: 
+[2025-10-20T03:41:08.914580] Agent: enrichment
+Step: initial_analysis
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:41:08,922 - agent.enrichment - INFO - Reasoning - analyzing_leads_for_explorium_enrichment: 
+[2025-10-20T03:41:08.921579] Agent: enrichment
+Step: analyzing_leads_for_explorium_enrichment
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact_name": "Sarah Johnson",
+      "email": "sarah.johnson@techcorp.com",
+      "title": "VP of Sales",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "company_size": 150,
+      "industry": "SaaS",
+      "signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ]
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact_name": "Michael Chen",
+      "email": "m.chen@dataflow.com",
+      "title": "Director of Marketing",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "company_size": 200,
+      "industry": "Technology",
+      "signals": [
+        "product_launch"
+      ]
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact_name": "Jennifer Martinez",
+      "email": "jennifer.martinez@cloudscale.com",
+      "title": "Chief Revenue Officer",
+      "linkedin": "https://linkedin.com/in/jennifermartinez",
+      "company_size": 300,
+      "industry": "SaaS",
+      "signals": [
+        "new_leadership",
+        "recent_funding"
+      ]
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact_name": "Robert Kim",
+      "email": "robert.kim@fintech-innov.com",
+      "title": "VP of Business Development",
+      "linkedin": "https://linkedin.com/in/robertkim",
+      "company_size": 180,
+      "industry": "Financial Services",
+      "signals": [
+        "hiring_for_sales"
+      ]
+    }
+  ]
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:41:08,925 - agent.enrichment - INFO - Starting Explorium enrichment for TechCorp Solutions
+2025-10-20 03:41:09,983 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:41:09,994 - agent.enrichment - INFO - Starting Explorium enrichment for DataFlow Inc
+2025-10-20 03:41:10,631 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:41:10,681 - agent.enrichment - INFO - Starting Explorium enrichment for CloudScale Systems
+2025-10-20 03:41:11,915 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:41:11,978 - agent.enrichment - INFO - Starting Explorium enrichment for FinTech Innovations
+2025-10-20 03:41:13,088 - agent.enrichment - ERROR - Explorium business search failed: 422
+2025-10-20 03:41:13,092 - agent.enrichment - INFO - Reasoning - explorium_enrichment_complete: 
+[2025-10-20T03:41:13.092713] Agent: enrichment
+Step: explorium_enrichment_complete
+
+Base Reasoning: I need to enrich the basic prospect data with comprehensive company and contact information to enable better scoring and personalization.
+
+Current Inputs: {
+  "total_processed": 4,
+  "explorium_enrichments": 0,
+  "fallback_enrichments": 4
+}
+
+Instructions: Enrich lead data with additional company information, technology stack, and contact details using Explorium API.
+
+Available Tools: ['ExploriumAPI']
+        
+2025-10-20 03:41:13,093 - agent.enrichment - INFO - Output validation passed for enrichment
+2025-10-20 03:41:13,093 - agent.enrichment - INFO - Execution enrichment_83fd2966 completed with status: SUCCESS
+2025-10-20 03:41:13,094 - agent.enrichment - INFO - Outputs: {
+  "enriched_leads": [
+    {
+      "company": "TechCorp Solutions",
+      "contact": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@techcorp.com",
+        "title": "VP of Sales",
+        "linkedin": "https://linkedin.com/in/sarahjohnson",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "TechCorp Solutions is a technology company.",
+        "domain": "",
+        "employee_count": 150,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 30000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "recent_funding",
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:41:09.994152",
+      "prospects_found": 0
+    },
+    {
+      "company": "DataFlow Inc",
+      "contact": {
+        "name": "Michael Chen",
+        "email": "m.chen@dataflow.com",
+        "title": "Director of Marketing",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "DataFlow Inc is a technology company.",
+        "domain": "",
+        "employee_count": 200,
+        "country": "United States",
+        "industry_tags": [
+          "Technology"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Google Cloud",
+          "Kubernetes",
+          "JavaScript",
+          "MongoDB"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 40000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "product_launch"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:41:10.681748",
+      "prospects_found": 0
+    },
+    {
+      "company": "CloudScale Systems",
+      "contact": {
+        "name": "Jennifer Martinez",
+        "email": "jennifer.martinez@cloudscale.com",
+        "title": "Chief Revenue Officer",
+        "linkedin": "https://linkedin.com/in/jennifermartinez",
+        "seniority": "executive",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "CloudScale Systems is a technology company.",
+        "domain": "",
+        "employee_count": 300,
+        "country": "United States",
+        "industry_tags": [
+          "SaaS"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "AWS",
+          "Docker",
+          "React",
+          "Python",
+          "PostgreSQL"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 60000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "new_leadership",
+        "recent_funding"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:41:11.978308",
+      "prospects_found": 0
+    },
+    {
+      "company": "FinTech Innovations",
+      "contact": {
+        "name": "Robert Kim",
+        "email": "robert.kim@fintech-innov.com",
+        "title": "VP of Business Development",
+        "linkedin": "https://linkedin.com/in/robertkim",
+        "seniority": "senior",
+        "phone": "",
+        "mobile_phone": "",
+        "department": ""
+      },
+      "company_data": {
+        "description": "FinTech Innovations is a technology company.",
+        "domain": "",
+        "employee_count": 180,
+        "country": "United States",
+        "industry_tags": [
+          "Financial Services"
+        ],
+        "technologies": [
+          "Salesforce",
+          "HubSpot",
+          "Slack",
+          "Zoom",
+          "Microsoft 365",
+          "Snowflake",
+          "Tableau",
+          "Java",
+          "Oracle",
+          "Workday"
+        ],
+        "funding": "Series B",
+        "annual_revenue": 36000000,
+        "founded": 2015,
+        "business_id": ""
+      },
+      "original_signals": [
+        "hiring_for_sales"
+      ],
+      "enrichment_source": "fallback",
+      "enrichment_timestamp": "2025-10-20T03:41:13.092713",
+      "prospects_found": 0
+    }
+  ],
+  "total_processed": 4,
+  "successful_enrichments": 4,
+  "failed_enrichments": 0,
+  "explorium_enrichments": 0
+}
