@@ -12,6 +12,8 @@ An **autonomous multi-agent B2B prospecting and outreach system** built with Lan
 
 See the entire workflow in action - from lead discovery to email sending and analytics dashboard!
 
+<img src="dashboard instruction.png" alt="AskMe Pro Chat Interface" />  
+
 ## ✨ Key Features
 
 - 🤖 **7 Specialized AI Agents** working in perfect harmony
@@ -592,4 +594,5 @@ After execution, you should see:
 - 📚 **API Documentation** - Check individual agent files for detailed API docs
 - 🐞 **Issues & Support** - Report bugs or request features on GitHub
 - 📈 **Advanced Configuration** - See `workflow.json` for customization options
+
 
